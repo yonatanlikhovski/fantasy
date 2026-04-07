@@ -1,0 +1,613 @@
+,Player,From,To,Pos,Ht,Wt,Birth Date,Colleges
+0,Precious Achiuwa,2021,2025,F,06-אוג,225,"September 19, 1999",Memphis
+1,Steven Adams,2014,2025,C,06-נוב,265,"July 20, 1993",Pitt
+2,Bam Adebayo,2018,2025,C-F,06-ספט,255,"July 18, 1997",Kentucky
+3,Ochai Agbaji,2023,2025,G,06-מאי,215,"April 20, 2000",Kansas
+4,Santi Aldama,2022,2025,F,06-נוב,224,"January 10, 2001",Loyola (MD)
+5,Trey Alexander,2025,2025,G,06-אפר,185,"May 2, 2003",Creighton
+6,Nickeil Alexander-Walker,2020,2025,G,06-מאי,205,"September 2, 1998",Virginia Tech
+7,Grayson Allen,2019,2025,G,06-אפר,198,"October 8, 1995",Duke
+8,Jarrett Allen,2018,2025,C-F,06-נוב,243,"April 21, 1998",Texas
+9,Jose Alvarado,2022,2025,G,6-0,179,"April 12, 1998",Georgia Tech
+10,Kyle Anderson,2015,2025,F-G,06-ספט,230,"September 20, 1993",UCLA
+11,Giannis Antetokounmpo,2014,2025,F-G,06-נוב,242,"December 6, 1994",
+12,Cole Anthony,2021,2025,G,06-פבר,185,"May 15, 2000",UNC
+13,OG Anunoby,2018,2025,F,06-יול,232,"July 17, 1997",Indiana
+14,Deni Avdija,2021,2025,G-F,06-ספט,210,"January 3, 2001",
+15,Deandre Ayton,2019,2025,C,7-0,250,"July 23, 1998",Arizona
+16,Marcus Bagley,2025,2025,F,06-אוג,215,"October 23, 2001",Arizona State
+17,Marvin Bagley III,2019,2025,F-C,06-אוק,235,"March 14, 1999",Duke
+18,Patrick Baldwin Jr.,2023,2025,G-F,06-ספט,220,"November 18, 2002",UW-Milwaukee
+19,LaMelo Ball,2021,2025,G,06-יול,180,"August 22, 2001",
+20,Lonzo Ball,2018,2025,G,06-יונ,190,"October 27, 1997",UCLA
+21,Mo Bamba,2019,2025,C,7-0,231,"May 12, 1998",Texas
+22,Paolo Banchero,2023,2025,F,06-אוק,250,"November 12, 2002",Duke
+23,Desmond Bane,2021,2025,G,06-מאי,215,"June 25, 1998",TCU
+24,Dalano Banton,2022,2025,G-F,06-ספט,204,"November 7, 1999",Nebraska
+25,Dominick Barlow,2023,2025,F,06-ספט,221,"May 26, 2003",
+26,Harrison Barnes,2013,2025,F,06-אוג,225,"May 30, 1992",UNC
+27,Scottie Barnes,2022,2025,G-F,06-יול,227,"August 1, 2001",Florida State
+28,RJ Barrett,2020,2025,G-F,06-יונ,214,"June 14, 2000",Duke
+29,Charles Bassey,2022,2025,C,06-אוק,235,"October 28, 2000",Western Kentucky
+30,Emoni Bates,2024,2025,G,06-אוק,170,"January 28, 2004","Memphis, Eastern Michigan"
+31,Jamison Battle,2025,2025,F,06-יול,220,"May 10, 2001","George Washington, Minnesota, Ohio State"
+32,Nicolas Batum,2009,2025,F-G,06-אוג,230,"December 14, 1988",
+33,Damion Baugh,2025,2025,G,06-אפר,194,"August 3, 2000","Memphis, TCU"
+34,Bradley Beal,2013,2025,G,06-אפר,207,"June 28, 1993",Florida
+35,Malik Beasley,2017,2025,G,06-אפר,187,"November 26, 1996",Florida State
+36,MarJon Beauchamp,2023,2025,G,06-יונ,199,"October 12, 2000",Yakima Valley Community College
+37,Reece Beekman,2025,2025,G,06-ינו,190,"October 8, 2001",Virginia
+38,Goga Bitadze,2020,2025,C,06-נוב,250,"July 20, 1999",
+39,Bismack Biyombo,2012,2025,C-F,06-אוג,255,"August 28, 1992",
+40,Anthony Black,2024,2025,G,06-יול,198,"January 20, 2004",Arkansas
+41,Bogdan Bogdanoviִ‡,2018,2025,G,06-מאי,220,"August 18, 1992",
+42,Bol Bol,2020,2025,F-C,07-מרץ,220,"November 16, 1999",Oregon
+43,Adem Bona,2025,2025,F-C,06-אוק,235,"March 28, 2003",UCLA
+44,Devin Booker,2016,2025,G,06-יונ,206,"October 30, 1996",Kentucky
+45,Brandon Boston Jr.,2022,2025,G-F,06-יול,185,"November 28, 2001",Kentucky
+46,Chris Boucher,2018,2025,F,06-ספט,200,"January 11, 1993","New Mexico Junior College, Northwest College, Oregon"
+47,Jamaree Bouyea,2023,2025,G,06-פבר,180,"June 27, 1999",San Francisco
+48,Tony Bradley,2018,2025,F-C,06-אוק,248,"January 8, 1998",UNC
+49,Malaki Branham,2023,2025,G,06-אפר,180,"May 12, 2003",Ohio State
+50,Christian Braun,2023,2025,G,06-יונ,218,"April 17, 2001",Kansas
+51,Jalen Bridges,2025,2025,F,06-אוג,225,"May 14, 2001","West Virginia, Baylor"
+52,Mikal Bridges,2019,2025,F-G,06-יונ,209,"August 30, 1996",Villanova
+53,Miles Bridges,2019,2025,G-F,06-יול,225,"March 21, 1998",Michigan State
+54,Oshae Brissett,2020,2025,F,06-יול,210,"June 20, 1998",Syracuse
+55,Malcolm Brogdon,2017,2025,G,06-אפר,229,"December 11, 1992",Virginia
+56,Dillon Brooks,2018,2025,F-G,06-יונ,225,"January 22, 1996",Oregon
+57,Keion Brooks Jr.,2025,2025,F,06-יול,210,"August 7, 2000","Kentucky, Washington"
+58,Bruce Brown,2019,2025,G-F,06-אפר,202,"August 15, 1996",Miami (FL)
+59,Jaylen Brown,2017,2025,F-G,06-יונ,223,"October 24, 1996",California
+60,Kobe Brown,2024,2025,G-F,06-יול,250,"January 1, 2000",Missouri
+61,Moses Brown,2020,2025,C,07-פבר,245,"October 13, 1999",UCLA
+62,Jalen Brunson,2019,2025,G,06-פבר,190,"August 31, 1996",Villanova
+63,Thomas Bryant,2018,2025,C,06-אוק,248,"July 31, 1997",Indiana
+64,Kobe Bufkin,2024,2025,G,06-אפר,195,"September 21, 2003",Michigan
+65,Alec Burks,2012,2025,G,06-יונ,214,"July 20, 1991",Colorado
+66,Jared Butler,2022,2025,G,06-מרץ,195,"August 25, 2000",Baylor
+67,Jimmy Butler,2012,2025,F-G,06-יול,230,"September 14, 1989","Tyler Junior College, Marquette"
+68,Matas Buzelis,2025,2025,F,06-אוק,209,"October 13, 2004",
+69,Jamal Cain,2023,2025,F,06-יול,191,"March 20, 1999","Marquette, Oakland"
+70,Kentavious Caldwell-Pope,2014,2025,G,06-מאי,204,"February 18, 1993",Georgia
+71,Toumani Camara,2024,2025,F,06-אוג,220,"May 8, 2000",Dayton
+72,Vlatko ִanִar,2020,2025,F,06-אוג,236,"April 10, 1997",
+73,Clint Capela,2015,2025,C,06-אוק,240,"May 18, 1994",
+74,Branden Carlson,2025,2025,C,7-0,220,"June 14, 1999",Utah
+75,Bub Carrington,2025,2025,G,06-אפר,190,"July 21, 2005",Pitt
+76,Devin Carter,2025,2025,G,06-פבר,195,"March 18, 2002","South Carolina, Providence"
+77,Jevon Carter,2019,2025,G,06-ינו,200,"September 14, 1995",West Virginia
+78,Wendell Carter Jr.,2019,2025,C,06-אוק,270,"April 16, 1999",Duke
+79,D.J. Carton,2024,2025,G,06-פבר,200,"August 5, 2000","Ohio State, Marquette"
+80,Alex Caruso,2018,2025,G,06-מאי,186,"February 28, 1994",Texas A&M
+81,Stephon Castle,2025,2025,G,06-יונ,215,"November 1, 2004",UConn
+82,Colin Castleton,2024,2025,F,06-נוב,250,"May 25, 2000","Michigan, Florida"
+83,Julian Champagnie,2023,2025,F,06-אוג,220,"June 29, 2001",St. John's
+84,Justin Champagnie,2022,2025,F,06-יונ,200,"June 29, 2001",Pitt
+85,Ulrich Chomche,2025,2025,F-C,06-אוק,235,"December 30, 2005",
+86,Cam Christie,2025,2025,G,06-מאי,190,"July 24, 2005",Minnesota
+87,Max Christie,2023,2025,G,06-יונ,190,"February 10, 2003",Michigan State
+88,Josh Christopher,2022,2025,G,06-מאי,215,"December 8, 2001",Arizona State
+89,Sidy Cissoko,2024,2025,G,06-אוג,200,"April 2, 2004",
+90,Jaylen Clark,2025,2025,G,06-מאי,205,"October 13, 2001",UCLA
+91,Brandon Clarke,2020,2025,F,06-אוג,215,"September 19, 1996","San Jose State, Gonzaga"
+92,Jordan Clarkson,2015,2025,G,06-מרץ,194,"June 7, 1992","Tulsa, Missouri"
+93,Nic Claxton,2020,2025,C,06-נוב,215,"April 17, 1999",Georgia
+94,Donovan Clingan,2025,2025,C,07-פבר,280,"February 23, 2004",UConn
+95,Noah Clowney,2024,2025,F,06-אוק,210,"July 14, 2004",Alabama
+96,Amir Coffey,2020,2025,G,06-יול,210,"June 17, 1997",Minnesota
+97,Isaiah Collier,2025,2025,G,06-מרץ,210,"October 8, 2004",USC
+98,John Collins,2018,2025,F,06-ספט,235,"September 23, 1997",Wake Forest
+99,Yuri Collins,2025,2025,G,6-0,190,"March 7, 2001",Saint Louis
+100,Zach Collins,2018,2025,C-F,06-נוב,250,"November 19, 1997",Gonzaga
+101,Mike Conley,2008,2025,G,6-0,175,"October 11, 1987",Ohio State
+102,Pat Connaughton,2016,2025,G,06-מאי,209,"January 6, 1993",Notre Dame
+103,Bilal Coulibaly,2024,2025,F,06-אוג,195,"July 26, 2004",
+104,Ricky Council IV,2024,2025,G,06-יונ,205,"August 3, 2001","Wichita State, Arkansas"
+105,Torrey Craig,2018,2025,G-F,06-יול,221,"December 19, 1990",USC Upstate
+106,Isaiah Crawford,2025,2025,F,06-יונ,220,"November 1, 2001",Louisiana Tech
+107,Jae Crowder,2013,2025,F,06-יונ,235,"July 6, 1990",Marquette
+108,Cui Yongxi,2025,2025,G,06-יונ,190,"May 28, 2003",
+109,Cade Cunningham,2022,2025,G,06-יונ,220,"September 25, 2001",Oklahoma State
+110,Seth Curry,2014,2025,G,06-ינו,185,"August 23, 1990","Liberty, Duke"
+111,Stephen Curry,2010,2025,G,06-פבר,185,"March 14, 1988",Davidson
+112,Tristan Da Silva,2025,2025,F,06-אוג,217,"May 15, 2001",Colorado
+113,Pacome Dadiet,2025,2025,F,06-יול,210,"July 27, 2005",
+114,Dyson Daniels,2023,2025,G,06-אוג,199,"March 17, 2003",
+115,N'Faly Dante,2025,2025,C,06-נוב,230,"October 19, 2001",Oregon
+116,Anthony Davis,2013,2025,F-C,06-אוק,253,"March 11, 1993",Kentucky
+117,Johnny Davis,2023,2025,G,06-מאי,196,"February 27, 2002",Wisconsin
+118,Terence Davis,2020,2025,G,06-אפר,201,"May 16, 1997",Ole Miss
+119,JD Davison,2023,2025,G,06-ינו,195,"October 3, 2002",Alabama
+120,DeMar DeRozan,2010,2025,G-F,06-יונ,220,"August 7, 1989",USC
+121,RayJ Dennis,2025,2025,G,06-פבר,180,"March 30, 2001","Boise State, Toledo, Baylor"
+122,Donte DiVincenzo,2019,2025,G,06-אפר,203,"January 31, 1997",Villanova
+123,Moussa Diabatֳ©,2023,2025,F,06-נוב,210,"January 21, 2002",Michigan
+124,Gradey Dick,2024,2025,G,06-יונ,205,"November 20, 2003",Kansas
+125,Ousmane Dieng,2023,2025,F,06-אוק,222,"May 21, 2003",
+126,Rob Dillingham,2025,2025,G,06-ינו,176,"January 4, 2005",Kentucky
+127,Spencer Dinwiddie,2015,2025,G,06-מאי,215,"April 6, 1993",Colorado
+128,Luka Donִiִ‡,2019,2025,G-F,06-יונ,230,"February 28, 1999",
+129,Luguentz Dort,2020,2025,G,06-אפר,220,"April 19, 1999",Arizona State
+130,Ayo Dosunmu,2022,2025,G,06-מאי,200,"January 17, 2000",Illinois
+131,Jeff Dowtin Jr.,2022,2025,G,06-מרץ,185,"May 10, 1997",Rhode Island
+132,PJ Dozier,2018,2025,G,06-יונ,205,"October 25, 1996",South Carolina
+133,Andre Drummond,2013,2025,C,06-נוב,279,"August 10, 1993",UConn
+134,Chris Duarte,2022,2025,G,06-יונ,190,"June 13, 1997",Oregon
+135,Alex Ducas,2025,2025,G-F,06-יונ,222,"December 11, 2000",Saint Mary's
+136,David Duke Jr.,2022,2025,G,06-מאי,205,"October 13, 1999",Providence
+137,Kris Dunn,2017,2025,G,06-מרץ,205,"March 18, 1994",Providence
+138,Ryan Dunn,2025,2025,F,06-יונ,216,"January 7, 2003",Virginia
+139,Kevin Durant,2008,2025,F-G,06-נוב,240,"September 29, 1988",Texas
+140,Jalen Duren,2023,2025,C,06-אוק,250,"November 18, 2003",Memphis
+141,Tari Eason,2023,2025,F,06-אוג,216,"May 10, 2001","Cincinnati, LSU"
+142,Zach Edey,2025,2025,C,07-אפר,305,"May 14, 2002",Purdue
+143,Anthony Edwards,2021,2025,G-F,06-אפר,225,"August 5, 2001",Georgia
+144,Jesse Edwards,2025,2025,C,06-נוב,230,"March 18, 2000","West Virginia, Syracuse"
+145,Justin Edwards,2025,2025,G,06-יונ,203,"December 16, 2003",Kentucky
+146,Kessler Edwards,2022,2025,F,06-אוג,215,"August 9, 2000",Pepperdine
+147,Keon Ellis,2023,2025,G,06-יונ,175,"January 8, 2000","Florida SouthWestern State College, Alabama"
+148,Joel Embiid,2017,2025,C,7-0,280,"March 16, 1994",Kansas
+149,Tyson Etienne,2025,2025,G,06-פבר,203,"September 17, 1999",Wichita State
+150,Drew Eubanks,2019,2025,F,06-ספט,245,"February 1, 1997",Oregon State
+151,Tosan Evbuomwan,2024,2025,F,06-אוג,219,"February 16, 2001",Princeton
+152,Dante Exum,2015,2025,G,06-מאי,214,"July 13, 1995",
+153,Bruno Fernando,2020,2025,F,06-ספט,240,"August 15, 1998",Maryland
+154,Kyle Filipowski,2025,2025,F-C,06-נוב,250,"November 7, 2003",Duke
+155,Dorian Finney-Smith,2017,2025,F,06-יול,220,"May 4, 1993",Florida
+156,Adam Flagler,2024,2025,G,06-מרץ,195,"December 1, 1999","Presbyterian College, Baylor"
+157,Trentyn Flowers,2025,2025,G-F,06-יול,185,"March 8, 2005",
+158,Malachi Flynn,2021,2025,G,06-ינו,175,"May 10, 1998","Washington State, San Diego State"
+159,Simone Fontecchio,2023,2025,F,06-אוג,209,"December 9, 1995",
+160,De'Aaron Fox,2018,2025,G,06-מרץ,185,"December 20, 1997",Kentucky
+161,Enrique Freeman,2025,2025,F,06-יול,206,"July 29, 2000",University of Akron
+162,Markelle Fultz,2018,2025,G,06-אפר,209,"May 29, 1998",Washington
+163,Johnny Furphy,2025,2025,G-F,06-אוג,200,"December 8, 2004",Kansas
+164,Daniel Gafford,2020,2025,C-F,06-אוק,234,"October 1, 1998",Arkansas
+165,Darius Garland,2020,2025,G,06-ינו,192,"January 26, 2000",Vanderbilt
+166,Marcus Garrett,2022,2025,G,06-מאי,205,"November 9, 1998",Kansas
+167,Luka Garza,2022,2025,F-C,06-אוק,235,"December 27, 1998",Iowa
+168,Keyonte George,2024,2025,G,06-אפר,185,"November 8, 2003",Baylor
+169,Kyshawn George,2025,2025,G,06-יול,200,"December 12, 2003",Miami (FL)
+170,Paul George,2011,2025,F-G,06-אוג,220,"May 2, 1990",Fresno State
+171,Taj Gibson,2010,2025,F-C,06-ספט,232,"June 24, 1985",USC
+172,Josh Giddey,2022,2025,G,06-אוג,210,"October 10, 2002",
+173,Shai Gilgeous-Alexander,2019,2025,G,06-יונ,200,"July 12, 1998",Kentucky
+174,Anthony Gill,2021,2025,F,06-יול,230,"October 17, 1992","South Carolina, Virginia"
+175,Collin Gillespie,2024,2025,G,06-ינו,195,"June 25, 1999",Villanova
+176,Rudy Gobert,2014,2025,C,07-ינו,258,"June 26, 1992",
+177,Jordan Goodwin,2022,2025,G,06-מרץ,200,"October 23, 1998",Saint Louis
+178,Aaron Gordon,2015,2025,F,06-אוג,235,"September 16, 1995",Arizona
+179,Eric Gordon,2009,2025,G-F,06-מרץ,215,"December 25, 1988",Indiana
+180,Jazian Gortman,2025,2025,G,06-פבר,184,"April 14, 2003",
+181,Jerami Grant,2015,2025,F,06-יול,210,"March 12, 1994",Syracuse
+182,A.J. Green,2023,2025,G,06-אפר,200,"September 27, 1999",University of Northern Iowa
+183,Draymond Green,2013,2025,F,06-יונ,230,"March 4, 1990",Michigan State
+184,Jalen Green,2022,2025,G,06-אפר,178,"February 9, 2002",
+185,Javonte Green,2020,2025,F,06-אפר,205,"July 23, 1993",Radford
+186,Jeff Green,2008,2025,F,06-אוג,235,"August 28, 1986",Georgetown
+187,Josh Green,2021,2025,G-F,06-מאי,200,"November 16, 2000",Arizona
+188,Quentin Grimes,2022,2025,G,06-מאי,205,"May 8, 2000","Kansas, Houston"
+189,Mouhamed Gueye,2024,2025,F,06-נוב,210,"November 9, 2002",Washington State
+190,Rui Hachimura,2020,2025,F,06-אוג,230,"February 8, 1998",Gonzaga
+191,Tyrese Haliburton,2021,2025,G,06-מאי,185,"February 29, 2000",Iowa State
+192,PJ Hall,2025,2025,F,06-אוג,245,"February 21, 2002",Clemson
+193,Tim Hardaway Jr.,2014,2025,G,06-מאי,205,"March 16, 1992",Michigan
+194,James Harden,2010,2025,G,06-מאי,220,"August 26, 1989",Arizona State
+195,Jaden Hardy,2023,2025,G,06-אפר,198,"July 5, 2002",
+196,Elijah Harkless,2025,2025,G,06-מרץ,195,"February 3, 2000","Cal State Northridge, Oklahoma, UNLV"
+197,Ron Harper Jr.,2023,2025,G-F,06-יונ,245,"April 12, 2000",Rutgers University
+198,Gary Harris,2015,2025,G,06-אפר,210,"September 14, 1994",Michigan State
+199,Tobias Harris,2012,2025,F,06-אוג,226,"July 15, 1992",Tennessee
+200,Josh Hart,2018,2025,G,06-אפר,215,"March 6, 1995",Villanova
+201,Isaiah Hartenstein,2019,2025,F,7-0,255,"May 5, 1998",
+202,Sam Hauser,2022,2025,F,06-אוג,215,"December 8, 1997","Marquette, Virginia"
+203,Jordan Hawkins,2024,2025,G,06-מאי,195,"April 29, 2002",UConn
+204,Jaxson Hayes,2020,2025,F,7-0,220,"May 23, 2000",Texas
+205,Killian Hayes,2021,2025,G,06-מאי,195,"July 27, 2001",
+206,Scoot Henderson,2024,2025,G,06-מרץ,202,"February 3, 2004",
+207,Taylor Hendricks,2024,2025,F,06-ספט,210,"November 22, 2003",Central Florida
+208,Tyler Herro,2020,2025,G,06-מאי,195,"January 20, 2000",Kentucky
+209,Buddy Hield,2017,2025,G-F,06-אפר,220,"December 17, 1992",Oklahoma
+210,Haywood Highsmith,2019,2025,F,06-יול,220,"December 9, 1996",Wheeling University
+211,Aaron Holiday,2019,2025,G,6-0,185,"September 30, 1996",UCLA
+212,Jrue Holiday,2010,2025,G,06-אפר,205,"June 12, 1990",UCLA
+213,Ron Holland,2025,2025,F,06-אוג,206,"July 7, 2005",
+214,Richaun Holmes,2016,2025,C-F,06-אוק,235,"October 15, 1993",Bowling Green
+215,Chet Holmgren,2024,2025,F-C,07-ינו,213,"May 1, 2002",Gonzaga
+216,Jalen Hood-Schifino,2024,2025,G,06-יונ,215,"June 19, 2003",Indiana
+217,Al Horford,2008,2025,C-F,06-ספט,240,"June 3, 1986",Florida
+218,Talen Horton-Tucker,2020,2025,G-F,06-אפר,234,"November 25, 2000",Iowa State
+219,Caleb Houstan,2023,2025,G-F,06-אוג,205,"January 9, 2003",Michigan
+220,Jett Howard,2024,2025,G,06-אוג,215,"September 14, 2003",Michigan
+221,Kevin Huerter,2019,2025,G,06-יול,190,"August 27, 1998",Maryland
+222,Jay Huff,2022,2025,F-C,07-ינו,240,"August 25, 1998",Virginia
+223,Ariel Hukporti,2025,2025,C,7-0,246,"April 11, 2002",
+224,De'Andre Hunter,2020,2025,F,06-אוג,225,"December 2, 1997",Virginia
+225,Bones Hyland,2022,2025,G,06-פבר,173,"September 14, 2000",VCU
+226,Oso Ighodaro,2025,2025,F,06-אוק,235,"July 14, 2002",Marquette
+227,Joe Ingles,2015,2025,F-G,06-אוג,220,"October 2, 1987",
+228,Brandon Ingram,2017,2025,F,06-אוג,190,"September 2, 1997",Duke
+229,Harrison Ingram,2025,2025,F,06-מאי,230,"November 27, 2002","Stanford, UNC"
+230,Kyrie Irving,2012,2025,G,06-פבר,195,"March 23, 1992",Duke
+231,Jonathan Isaac,2018,2025,F,06-אוק,230,"October 3, 1997",Florida State
+232,Jaden Ivey,2023,2025,G,06-אפר,195,"February 13, 2002",Purdue
+233,Andre Jackson Jr.,2024,2025,G,06-יונ,210,"November 13, 2001",UConn
+234,GG Jackson II,2024,2025,F,06-ספט,215,"December 17, 2004",South Carolina
+235,Isaiah Jackson,2022,2025,C-F,06-אוק,206,"January 10, 2002",Kentucky
+236,Jaren Jackson Jr.,2019,2025,F,06-אוק,242,"September 15, 1999",Michigan State
+237,Quenton Jackson,2023,2025,G,06-מאי,175,"September 15, 1998",Texas A&M
+238,Reggie Jackson,2012,2025,G,06-פבר,208,"April 16, 1990",Boston College
+239,Trayce Jackson-Davis,2024,2025,F,06-ספט,245,"February 22, 2000",Indiana
+240,Bronny James,2025,2025,G,06-פבר,210,"October 6, 2004",USC
+241,LeBron James,2004,2025,F-G,06-ספט,250,"December 30, 1984",
+242,Jaime Jaquez Jr.,2024,2025,G-F,06-יונ,225,"February 18, 2001",UCLA
+243,DaQuan Jeffries,2020,2025,G-F,06-מאי,230,"August 30, 1997","Oral Roberts, Tulsa"
+244,Trey Jemison,2024,2025,C,06-נוב,260,"November 28, 1999","Clemson, UAB"
+245,Daniss Jenkins,2025,2025,G,06-מרץ,165,"August 17, 2001","University of the Pacific, Iona College, St. John's"
+246,Ty Jerome,2020,2025,G,06-מאי,195,"July 8, 1997",Virginia
+247,Isaiah Joe,2021,2025,G,06-מאי,181,"July 2, 1999",Arkansas
+248,AJ Johnson,2025,2025,G,06-אפר,160,"December 1, 2004",
+249,Cameron Johnson,2020,2025,F,06-אוג,210,"March 3, 1996","Pitt, UNC"
+250,Jalen Johnson,2022,2025,F,06-ספט,220,"December 18, 2001",Duke
+251,James Johnson,2010,2025,F,06-יול,240,"February 20, 1987",Wake Forest
+252,Keldon Johnson,2020,2025,G,06-מאי,220,"October 11, 1999",Kentucky
+253,Keon Johnson,2022,2025,G,06-מאי,186,"March 10, 2002",Tennessee
+254,Keshad Johnson,2025,2025,F,06-יונ,225,"June 23, 2001","San Diego State, Arizona"
+255,Nikola Jokiִ‡,2016,2025,C-F,06-נוב,284,"February 19, 1995",
+256,Colby Jones,2024,2025,G,06-יונ,205,"May 28, 2002",Xavier
+257,Derrick Jones Jr.,2017,2025,F,06-מאי,210,"February 15, 1997",UNLV
+258,Dillon Jones,2025,2025,F,06-מאי,240,"October 29, 2001",Weber State
+259,Herbert Jones,2022,2025,F,06-אוג,210,"October 6, 1998",Alabama
+260,Isaac Jones,2025,2025,F,06-אוג,245,"July 11, 2000","Wenatchee Valley College, Idaho, Washington State"
+261,Kai Jones,2022,2025,F-C,06-נוב,218,"January 19, 2001",Texas
+262,Mason Jones,2021,2025,G,06-אפר,200,"July 21, 1998","Connors State College, Arkansas"
+263,Spencer Jones,2025,2025,F,06-יול,225,"June 14, 2001",Stanford
+264,Tre Jones,2021,2025,G,06-ינו,185,"January 8, 2000",Duke
+265,Tyus Jones,2016,2025,G,06-ינו,196,"May 10, 1996",Duke
+266,DeAndre Jordan,2009,2025,C,06-נוב,265,"July 21, 1988",Texas A&M
+267,Cory Joseph,2012,2025,G,06-פבר,200,"August 20, 1991",Texas
+268,Nikola Joviִ‡,2023,2025,G-F,06-אוק,209,"June 9, 2003",
+269,Johnny Juzang,2023,2025,G,06-יול,215,"March 17, 2001","Kentucky, UCLA"
+270,Yuki Kawamura,2025,2025,G,05-אוג,159,"May 2, 2001",
+271,Kylor Kelley,2025,2025,F,7-0,215,"August 26, 1997",Oregon State
+272,Luke Kennard,2018,2025,G,06-מאי,206,"June 24, 1996",Duke
+273,Walker Kessler,2023,2025,C,7-0,245,"July 26, 2001","UNC, Auburn"
+274,Braxton Key,2022,2025,F,06-אוג,230,"February 14, 1997","Alabama, Virginia"
+275,Corey Kispert,2022,2025,G-F,06-יול,220,"March 3, 1999",Gonzaga
+276,Maxi Kleber,2018,2025,F,06-אוק,240,"January 29, 1992",
+277,Bobi Klintman,2025,2025,F,06-ספט,225,"March 6, 2003",Wake Forest
+278,Dalton Knecht,2025,2025,G,06-יונ,215,"April 19, 2001","Northeastern Junior College, University of Northern Colorado, Tennessee"
+279,Kevin Knox,2019,2025,F,06-יול,215,"August 11, 1999",Kentucky
+280,Tyler Kolek,2025,2025,G,06-ינו,195,"March 27, 2001","George Mason, Marquette"
+281,Christian Koloko,2023,2025,C,07-ינו,230,"June 20, 2000",Arizona
+282,John Konchar,2020,2025,G,06-מאי,210,"March 22, 1996",Purdue-Fort Wayne
+283,Luke Kornet,2018,2025,C-F,07-פבר,250,"July 15, 1995",Vanderbilt
+284,Vit Krejci,2022,2025,G,06-אוג,195,"June 19, 2000",
+285,Jonathan Kuminga,2022,2025,F,06-אוג,210,"October 6, 2002",
+286,Kyle Kuzma,2018,2025,F,06-ספט,221,"July 24, 1995",Utah
+287,Jake LaRavia,2023,2025,F,06-אוג,235,"November 3, 2001","Indiana State University, Wake Forest"
+288,Zach LaVine,2015,2025,G-F,06-מאי,200,"March 10, 1995",UCLA
+289,Skal Labissiֳ¨re,2017,2025,F,06-אוק,235,"March 18, 1996",Kentucky
+290,Jock Landale,2022,2025,C,06-נוב,256,"October 25, 1995",Saint Mary's
+291,Pelle Larsson,2025,2025,G,06-מאי,215,"February 23, 2001","Utah, Arizona"
+292,A.J. Lawson,2023,2025,G,06-יונ,179,"July 15, 2000",South Carolina
+293,Caris LeVert,2017,2025,G-F,06-יונ,205,"August 25, 1994",Michigan
+294,Damion Lee,2018,2025,G,06-מאי,210,"October 21, 1992","Drexel, Louisville"
+295,Alex Len,2014,2025,C,7-0,250,"June 16, 1993",Maryland
+296,Kawhi Leonard,2012,2025,F,06-יול,225,"June 29, 1991",San Diego State
+297,Malevy Leons,2025,2025,F,06-ספט,205,"September 23, 1999","Mineral Area College, Bradley"
+298,Maxwell Lewis,2024,2025,F,06-יול,195,"July 27, 2002",Pepperdine
+299,E.J. Liddell,2024,2025,F,06-יול,240,"December 18, 2000",Ohio State
+300,Damian Lillard,2013,2025,G,06-פבר,195,"July 15, 1990",Weber State
+301,Dereck Lively II,2024,2025,C,07-ינו,230,"February 12, 2004",Duke
+302,Chris Livingston,2024,2025,F,06-יונ,220,"October 15, 2003",Kentucky
+303,Kevon Looney,2016,2025,F-C,06-ספט,222,"February 6, 1996",UCLA
+304,Brook Lopez,2009,2025,C,07-ינו,282,"April 1, 1988",Stanford
+305,Kevin Love,2009,2025,F-C,06-אוג,251,"September 7, 1988",UCLA
+306,Kyle Lowry,2007,2025,G,6-0,196,"March 25, 1986",Villanova
+307,Trey Lyles,2016,2025,F,06-ספט,234,"November 5, 1995",Kentucky
+308,Sandro Mamukelashvili,2022,2025,C-F,06-נוב,240,"May 23, 1999",Seton Hall
+309,Terance Mann,2020,2025,G-F,06-מאי,215,"October 18, 1996",Florida State
+310,Tre Mann,2022,2025,G,06-מרץ,178,"February 3, 2001",Florida
+311,Lauri Markkanen,2018,2025,F-C,7-0,240,"May 22, 1997",Arizona
+312,Naji Marshall,2021,2025,F,06-יול,220,"January 24, 1998",Xavier
+313,Caleb Martin,2020,2025,F,06-מאי,205,"September 28, 1995","NC State, Nevada"
+314,Cody Martin,2020,2025,G-F,06-מאי,205,"September 28, 1995","NC State, Nevada"
+315,Jaylen Martin,2025,2025,F,06-יונ,216,"January 28, 2004",
+316,KJ Martin,2021,2025,F,06-יונ,215,"January 6, 2001",
+317,Tyrese Martin,2023,2025,G,06-יונ,215,"March 7, 1999","Rhode Island, UConn"
+318,Garrison Mathews,2020,2025,G,06-מאי,215,"October 24, 1996",Lipscomb
+319,Bennedict Mathurin,2023,2025,G-F,06-יונ,210,"June 19, 2002",Arizona
+320,Karlo Matkoviִ‡,2025,2025,F-C,06-נוב,231,"March 30, 2001",
+321,Tyrese Maxey,2021,2025,G,06-פבר,200,"November 4, 2000",Kentucky
+322,Miles McBride,2022,2025,G,06-פבר,200,"September 8, 2000",West Virginia
+323,Jared McCain,2025,2025,G,06-פבר,195,"February 20, 2004",Duke
+324,Mac McClung,2022,2025,G,06-פבר,185,"January 6, 1999","Georgetown, Texas Tech"
+325,CJ McCollum,2014,2025,G,06-מרץ,190,"September 19, 1991",Lehigh
+326,T.J. McConnell,2016,2025,G,06-ינו,190,"March 25, 1992","Duquesne, Arizona"
+327,Kevin McCullar Jr.,2025,2025,G,06-יונ,210,"March 15, 2001","Texas Tech, Kansas"
+328,Jaden McDaniels,2021,2025,F,06-ספט,185,"September 29, 2000",Washington
+329,Jalen McDaniels,2020,2025,F,06-ספט,205,"January 31, 1998",San Diego State
+330,Doug McDermott,2015,2025,F,06-יונ,225,"January 3, 1992",Creighton
+331,Bryce McGowens,2023,2025,G-F,06-יול,179,"November 8, 2002",Nebraska
+332,Jordan McLaughlin,2020,2025,G,6-0,185,"April 9, 1996",USC
+333,Jack McVeigh,2025,2025,F,06-אוג,215,"June 27, 1996",Nebraska
+334,De'Anthony Melton,2019,2025,G,06-פבר,200,"May 28, 1998",USC
+335,Sam Merrill,2021,2025,G,06-אפר,205,"May 15, 1996",Utah State University
+336,Vasilije Miciִ‡,2024,2025,G,06-מאי,200,"January 13, 1994",
+337,Khris Middleton,2013,2025,F-G,06-יול,222,"August 12, 1991",Texas A&M
+338,Brandon Miller,2024,2025,F-G,06-ספט,201,"November 22, 2002",Alabama
+339,Emanuel Miller,2025,2025,F,06-יול,215,"June 19, 2000","Texas A&M, TCU"
+340,Jordan Miller,2024,2025,G,06-יול,195,"January 23, 2000","George Mason, Miami (FL)"
+341,Leonard Miller,2024,2025,F,06-אוק,210,"November 26, 2003",
+342,Dariq Whitehead,2024,2025,F,06-יול,220,"August 1, 2004",Duke
+343,Patty Mills,2010,2025,G,06-פבר,180,"August 11, 1988",Saint Mary's
+344,Shake Milton,2019,2025,G,06-מאי,205,"September 26, 1996",SMU
+345,Justin Minaya,2023,2025,F,06-מאי,210,"March 26, 1999",
+346,Riley Minix,2025,2025,G,06-יול,230,"September 22, 2000","Southeastern University, Morehead State University"
+347,Josh Minott,2023,2025,F,06-אוג,205,"November 25, 2002",Memphis
+348,Yves Missi,2025,2025,C,06-נוב,235,"May 14, 2004",Baylor
+349,Ajay Mitchell,2025,2025,G,06-מאי,200,"June 25, 2002",UC Santa Barbara
+350,Davion Mitchell,2022,2025,G,06-פבר,205,"September 5, 1998","Auburn, Baylor"
+351,Donovan Mitchell,2018,2025,G,06-מרץ,215,"September 7, 1996",Louisville
+352,Evan Mobley,2022,2025,F-C,06-נוב,215,"June 18, 2001",USC
+353,Isaiah Mobley,2023,2025,F,06-אוג,240,"September 24, 1999",USC
+354,Jonathan Mogbo,2025,2025,F,06-ספט,225,"October 29, 2001","Missouri State, San Francisco"
+355,Malik Monk,2018,2025,G,06-מרץ,200,"February 4, 1998",Kentucky
+356,Moses Moody,2022,2025,G,06-מאי,205,"May 31, 2002",Arkansas
+357,Taze Moore,2024,2025,G,06-מאי,195,"June 29, 1998","Cal State-Bakersfield, Houston"
+358,Wendell Moore Jr.,2023,2025,G-F,06-מאי,213,"September 18, 2001",Duke
+359,Ja Morant,2020,2025,G,06-פבר,174,"August 10, 1999",Murray State
+360,Markieff Morris,2012,2025,F,06-ספט,245,"September 2, 1989",Kansas
+361,Monte Morris,2018,2025,G,06-פבר,183,"June 27, 1995",Iowa State
+362,Trey Murphy III,2022,2025,F,06-אוג,206,"June 18, 2000","Rice University, Virginia"
+363,Dejounte Murray,2017,2025,G,06-מאי,180,"September 19, 1996",Washington
+364,Jamal Murray,2017,2025,G,06-אפר,215,"February 23, 1997",Kentucky
+365,Keegan Murray,2023,2025,F,06-אוג,215,"August 19, 2000",Iowa
+366,Kris Murray,2024,2025,F,06-אוג,220,"August 19, 2000",Iowa
+367,Svi Mykhailiuk,2019,2025,G-F,06-יול,205,"June 10, 1997",Kansas
+368,Larry Nance Jr.,2016,2025,F-C,06-אוג,245,"January 1, 1993",Wyoming
+369,Pete Nance,2024,2025,F,06-נוב,230,"February 19, 2000","Northwestern, UNC"
+370,Andrew Nembhard,2023,2025,G,06-מאי,193,"January 16, 2000","Florida, Gonzaga"
+371,Aaron Nesmith,2021,2025,G-F,06-מאי,215,"October 16, 1999",Vanderbilt
+372,Tristen Newton,2025,2025,G,06-מאי,190,"April 26, 2001","East Carolina University, UConn"
+373,Georges Niang,2017,2025,F,06-יול,230,"June 17, 1993",Iowa State
+374,Daishen Nix,2022,2025,G,06-מאי,224,"February 13, 2002",
+375,Zeke Nnaji,2021,2025,F,06-ספט,240,"January 9, 2001",Arizona
+376,Miles Norris,2025,2025,F,06-אוק,220,"April 15, 2000","Oregon, City College of San Francisco, UC Santa Barbara"
+377,Jaylen Nowell,2020,2025,G,06-אפר,201,"July 9, 1999",Washington
+378,Jusuf Nurkiִ‡,2015,2025,C,7-0,290,"August 23, 1994",
+379,Royce O'Neale,2018,2025,F,06-אפר,226,"June 5, 1993","Denver, Baylor"
+380,Jahlil Okafor,2016,2025,C-F,06-אוק,270,"December 15, 1995",Duke
+381,Chuma Okeke,2021,2025,F,06-יונ,229,"August 18, 1998",Auburn
+382,Josh Okogie,2019,2025,G,06-אפר,213,"September 1, 1998",Georgia Tech
+383,Onyeka Okongwu,2021,2025,F,06-אוג,235,"December 11, 2000",USC
+384,Isaac Okoro,2021,2025,G-F,06-מאי,225,"January 26, 2001",Auburn
+385,Quincy Olivari,2025,2025,G,06-מרץ,198,"May 27, 2001","Rice University, Xavier"
+386,Kelly Olynyk,2014,2025,C-F,06-נוב,240,"April 19, 1991",Gonzaga
+387,Kelly Oubre Jr.,2016,2025,F,06-אוג,203,"December 9, 1995",Kansas
+388,Chris Paul,2006,2025,G,6-0,175,"May 6, 1985",Wake Forest
+389,Cameron Payne,2016,2025,G,06-מרץ,183,"August 8, 1994",Murray State
+390,Elfrid Payton,2015,2025,G,06-מרץ,195,"February 22, 1994",Louisiana
+391,Gary Payton II,2017,2025,G,06-פבר,190,"December 1, 1992",Oregon State
+392,Drew Peterson,2024,2025,G,06-ספט,205,"November 9, 1999","Rice University, USC"
+393,Julian Phillips,2024,2025,F,06-אוג,198,"November 5, 2003",Tennessee
+394,Jalen Pickett,2024,2025,G,06-אפר,209,"October 22, 1999","Siena College, Penn State"
+395,Scotty Pippen Jr.,2023,2025,G,06-ינו,185,"November 10, 2000",Vanderbilt
+396,Daeqwon Plowden,2025,2025,G,06-יונ,215,"August 29, 1998",Bowling Green
+397,Mason Plumlee,2014,2025,C-F,06-אוק,254,"March 5, 1990",Duke
+398,Brandin Podziemski,2024,2025,G,06-מאי,205,"February 25, 2003","Illinois, Santa Clara"
+399,Jakob Poeltl,2017,2025,C,7-0,245,"October 15, 1995",Utah
+400,Jordan Poole,2020,2025,G,06-אפר,194,"June 19, 1999",Michigan
+401,Craig Porter Jr.,2024,2025,G,06-פבר,186,"February 26, 2000","Vincennes University, Wichita State"
+402,Kevin Porter Jr.,2020,2025,G,06-אפר,203,"May 4, 2000",USC
+403,Michael Porter Jr.,2020,2025,F,06-אוק,218,"June 29, 1998",Missouri
+404,Bobby Portis,2016,2025,F,06-אוק,250,"February 10, 1995",Arkansas
+405,Kristaps Porziֵ†ִ£is,2016,2025,F-C,07-פבר,240,"August 2, 1995",
+406,Quinten Post,2025,2025,F,7-0,238,"March 21, 2000","Mississippi State, Boston College"
+407,Micah Potter,2022,2025,C,06-אוק,248,"April 6, 1998","Ohio State, Wisconsin"
+408,Dwight Powell,2015,2025,F-C,06-אוק,240,"July 20, 1991",Stanford
+409,Norman Powell,2016,2025,G,06-מרץ,215,"May 25, 1993",UCLA
+410,Taurean Prince,2017,2025,F,06-יונ,218,"March 22, 1994",Baylor
+411,Payton Pritchard,2021,2025,G,06-ינו,195,"January 28, 1998",Oregon
+412,Olivier-Maxence Prosper,2024,2025,F,06-אוג,230,"July 3, 2002","Clemson, Marquette"
+413,Zyon Pullin,2025,2025,G,06-אפר,206,"March 3, 2001","University of California, Riverside, Florida"
+414,Trevelin Queen,2022,2025,G,06-יונ,190,"February 25, 1997","College of Marin, New Mexico Military Institute, New Mexico State"
+415,Neemias Queta,2022,2025,C,7-0,245,"July 13, 1999",Utah State University
+416,Immanuel Quickley,2021,2025,G,06-מרץ,190,"June 17, 1999",Kentucky
+417,Lester Quiֳ±ones,2023,2025,G,06-מאי,208,"November 16, 2000",Memphis
+418,Julius Randle,2015,2025,F-C,06-ספט,250,"November 29, 1994",Kentucky
+419,Duop Reath,2024,2025,C,06-נוב,245,"June 26, 1996","Lee College, LSU"
+420,Austin Reaves,2022,2025,G,06-מאי,206,"May 29, 1998","Wichita State, Oklahoma"
+421,Cam Reddish,2020,2025,F,06-אוג,218,"September 1, 1999",Duke
+422,Paul Reed,2021,2025,F,06-ספט,210,"June 14, 1999",DePaul
+423,Alex Reese,2025,2025,F,06-ספט,245,"May 21, 1999",Alabama
+424,Antonio Reeves,2025,2025,G,06-מאי,205,"November 20, 2000","Illinois State, Kentucky"
+425,Naz Reid,2020,2025,F,06-ספט,264,"August 26, 1999",LSU
+426,Jared Rhoden,2023,2025,G,06-יונ,210,"August 27, 1999",Seton Hall
+427,Nick Richards,2021,2025,F-C,7-0,245,"November 29, 1997",Kentucky
+428,Josh Richardson,2016,2025,G,06-מאי,200,"September 15, 1993",Tennessee
+429,Zaccharie Risacher,2025,2025,F,06-אוג,200,"April 8, 2005",
+430,Liam Robbins,2025,2025,F,7-0,250,"July 12, 1999","Drake University, Minnesota, Vanderbilt"
+431,Duncan Robinson,2019,2025,G-F,06-יול,215,"April 22, 1994","Williams, Michigan"
+432,Mitchell Robinson,2019,2025,C,7-0,240,"April 1, 1998",Western Kentucky
+433,Orlando Robinson,2023,2025,F,7-0,235,"July 10, 2000",Fresno State
+434,Jeremiah Robinson-Earl,2022,2025,F,06-ספט,230,"November 3, 2000",Villanova
+435,David Roddy,2023,2025,F,06-אפר,255,"March 27, 2001",Colorado State
+436,Ryan Rollins,2023,2025,G,06-אפר,180,"July 3, 2002",Toledo
+437,Jackson Rowe,2025,2025,F,06-יול,210,"January 4, 1997",Cal State Fullerton
+438,Terry Rozier,2016,2025,G,06-ינו,190,"March 17, 1994",Louisville
+439,Rayan Rupert,2024,2025,G,06-יונ,205,"May 31, 2004",
+440,D'Angelo Russell,2016,2025,G,06-מרץ,193,"February 23, 1996",Ohio State
+441,Matt Ryan,2022,2025,F,06-יונ,215,"April 17, 1997","Notre Dame, Vanderbilt, Chattanooga"
+442,Domantas Sabonis,2017,2025,C-F,06-אוק,240,"May 3, 1996",Gonzaga
+443,Tidjane Salaֳ¼n,2025,2025,F,06-ספט,207,"August 10, 2005",
+444,Adama Sanogo,2024,2025,F,06-ספט,245,"February 12, 2002",UConn
+445,Gui Santos,2024,2025,F,06-אוג,209,"June 22, 2002",
+446,Dario ֵ ariִ‡,2017,2025,F-C,06-אוק,225,"April 8, 1994",
+447,Alex Sarr,2025,2025,F,7-0,205,"April 26, 2005",
+448,Marcus Sasser,2024,2025,G,06-פבר,195,"September 21, 2000",Houston
+449,Baylor Scheierman,2025,2025,G,06-יונ,205,"September 26, 2000","South Dakota State, Creighton"
+450,Dennis Schrֳ¶der,2014,2025,G,06-ינו,172,"September 15, 1993",
+451,Alperen ֵengֳ¼n,2022,2025,C-F,06-נוב,235,"July 25, 2002",
+452,Brice Sensabaugh,2024,2025,F,06-יונ,235,"October 30, 2003",Ohio State
+453,Collin Sexton,2019,2025,G,06-מרץ,190,"January 4, 1999",Alabama
+454,Landry Shamet,2019,2025,G,06-אפר,190,"March 13, 1997",Wichita State
+455,Terrence Shannon Jr.,2025,2025,G,06-יונ,215,"July 30, 2000","Texas Tech, Illinois"
+456,Day'Ron Sharpe,2022,2025,C,06-נוב,265,"November 6, 2001",UNC
+457,Shaedon Sharpe,2023,2025,G,06-יונ,200,"May 30, 2003",Kentucky
+458,Jamal Shead,2025,2025,G,6-0,200,"June 24, 2002",Houston
+459,Ben Sheppard,2024,2025,G,06-יונ,190,"July 16, 2001",Belmont
+460,Reed Sheppard,2025,2025,G,06-פבר,185,"June 24, 2004",Kentucky
+461,Pascal Siakam,2017,2025,F-C,06-אוג,230,"April 2, 1994",New Mexico State
+462,Ben Simmons,2018,2025,G-F,06-אוק,240,"July 20, 1996",LSU
+463,Anfernee Simons,2019,2025,G,06-מרץ,181,"June 8, 1999",
+464,KJ Simpson,2025,2025,G,6-0,189,"August 8, 2002",Colorado
+465,Jaylen Sims,2025,2025,G,06-יונ,195,"December 11, 1998",UNC Wilmington
+466,Jericho Sims,2022,2025,F,06-אוק,245,"October 20, 1998",Texas
+467,Marcus Smart,2015,2025,G,06-מרץ,220,"March 6, 1994",Oklahoma State
+468,Dru Smith,2023,2025,G,06-מרץ,203,"December 30, 1997","University of Evansville, Missouri"
+469,Jabari Smith Jr.,2023,2025,F,06-נוב,220,"May 13, 2003",Auburn
+470,Jalen Smith,2021,2025,F,06-אוק,215,"March 16, 2000",Maryland
+471,Nick Smith Jr.,2024,2025,G,06-פבר,185,"April 18, 2004",Arkansas
+472,Tolu Smith,2025,2025,F,06-אוק,254,"July 26, 2000","Western Kentucky, Mississippi State"
+473,Tyler Smith,2025,2025,F,06-נוב,224,"November 2, 2004",
+474,Jeremy Sochan,2023,2025,F-G,06-אוג,230,"May 20, 2003",Baylor
+475,Cam Spencer,2025,2025,G,06-מרץ,205,"April 6, 2000","Loyola (MD), Rutgers University, UConn"
+476,Pat Spencer,2024,2025,G,06-מרץ,205,"July 4, 1996","Loyola (MD), Northwestern"
+477,Jaden Springer,2022,2025,G,06-אפר,204,"September 25, 2002",Tennessee
+478,Isaiah Stevens,2025,2025,G,6-0,185,"November 1, 2000",Colorado State
+479,Lamar Stevens,2021,2025,F,06-יונ,230,"July 9, 1997",Penn State
+480,Isaiah Stewart,2021,2025,F-C,06-אוג,250,"May 22, 2001",Washington
+481,Julian Strawther,2024,2025,F,06-יול,205,"April 18, 2002",Gonzaga
+482,Max Strus,2020,2025,G,06-מאי,215,"March 28, 1996","Lewis (IL), DePaul"
+483,Jalen Suggs,2022,2025,G,06-מאי,205,"June 3, 2001",Gonzaga
+484,Cole Swider,2023,2025,F,06-ספט,220,"May 8, 1999","Villanova, Syracuse"
+485,Jae'Sean Tate,2021,2025,F,06-אפר,230,"October 28, 1995",Ohio State
+486,Jayson Tatum,2018,2025,F,06-אוג,210,"March 3, 1998",Duke
+487,Terry Taylor,2022,2025,G-F,06-מאי,230,"September 23, 1999",Austin Peay State University
+488,Garrett Temple,2010,2025,G,06-מאי,195,"May 8, 1986",LSU
+489,Dalen Terry,2023,2025,G,06-יול,195,"July 12, 2002",Arizona
+490,Daniel Theis,2018,2025,C,06-אוג,245,"April 4, 1992",
+491,Cam Thomas,2022,2025,G,06-אפר,210,"October 13, 2001",LSU
+492,Amen Thompson,2024,2025,G,06-יול,209,"January 30, 2003",
+493,Ausar Thompson,2024,2025,G,06-יול,215,"January 30, 2003",
+494,Klay Thompson,2012,2025,G-F,06-מאי,215,"February 8, 1990",Washington State
+495,Tristan Thompson,2012,2025,F-C,06-ספט,254,"March 13, 1991",Texas
+496,JT Thor,2022,2025,F,06-אוק,205,"August 26, 2002",Auburn
+497,Matisse Thybulle,2020,2025,G,06-מאי,201,"March 4, 1997",Washington
+498,Xavier Tillman Sr.,2021,2025,F,06-אוג,245,"January 12, 1999",Michigan State
+499,Drew Timme,2025,2025,F,06-אוק,235,"September 9, 2000",Gonzaga
+500,Nae'Qwan Tomlin,2025,2025,F,06-אוק,205,"December 10, 2000","Monroe Community College, Chipola College, Kansas State, Memphis"
+501,Jacob Toppin,2024,2025,F,06-ספט,205,"May 8, 2000","Rhode Island, Kentucky"
+502,Obi Toppin,2021,2025,F,06-ספט,220,"March 4, 1998",Dayton
+503,Karl-Anthony Towns,2016,2025,C-F,7-0,248,"November 15, 1995",Kentucky
+504,Armel Traorֳ©,2025,2025,F,06-אוג,215,"January 23, 2003",
+505,Luke Travers,2025,2025,G,06-אוג,199,"September 3, 2001",
+506,Gary Trent Jr.,2019,2025,G,06-מאי,209,"January 18, 1999",Duke
+507,Oscar Tshiebwe,2024,2025,F,06-ספט,260,"November 27, 1999","West Virginia, Kentucky"
+508,P.J. Tucker,2007,2025,F,06-מאי,245,"May 5, 1985",Texas
+509,Myles Turner,2016,2025,C-F,06-נוב,250,"March 24, 1996",Texas
+510,Hunter Tyson,2024,2025,F,06-אוג,215,"June 13, 2000",Clemson
+511,Jaylon Tyson,2025,2025,G,06-יונ,215,"December 2, 2002","Texas, Texas Tech, California"
+512,Stanley Umude,2023,2025,G,06-יונ,210,"April 12, 1999","South Dakota, Arkansas"
+513,Jonas Valanִiֵ«nas,2013,2025,C,06-נוב,265,"May 6, 1992",
+514,Fred VanVleet,2017,2025,G,6-0,197,"February 25, 1994",Wichita State
+515,Jarred Vanderbilt,2019,2025,F,06-אוג,214,"April 3, 1999",Kentucky
+516,Devin Vassell,2021,2025,G-F,06-מאי,200,"August 23, 2000",Florida State
+517,Gabe Vincent,2020,2025,G,06-מרץ,195,"June 14, 1996",UC Santa Barbara
+518,Nikola Vuִeviִ‡,2012,2025,C,06-אוק,260,"October 24, 1990",USC
+519,Tristan Vukcevic,2024,2025,F-C,06-אוק,223,"March 11, 2003",
+520,Dean Wade,2020,2025,F,06-ספט,228,"November 20, 1996",Kansas State
+521,Franz Wagner,2022,2025,G-F,06-אוק,225,"August 27, 2001",Michigan
+522,Moritz Wagner,2019,2025,F-C,06-נוב,245,"April 26, 1997",Michigan
+523,Jabari Walker,2023,2025,F,06-ספט,215,"July 30, 2002",Colorado
+524,Jarace Walker,2024,2025,F,06-אוג,240,"September 4, 2003",Houston
+525,Lonnie Walker IV,2019,2025,G,06-אפר,204,"December 14, 1998",Miami (FL)
+526,Cason Wallace,2024,2025,G,06-אפר,205,"November 7, 2003",Kentucky
+527,Keaton Wallace,2025,2025,G,06-מרץ,195,"February 26, 1999",Texas-San Antonio
+528,Jordan Walsh,2024,2025,G-F,06-יול,205,"March 3, 2004",Arkansas
+529,Ja'Kobe Walter,2025,2025,G,06-מאי,180,"September 4, 2004",Baylor
+530,Kel'el Ware,2025,2025,C,7-0,230,"April 20, 2004","Oregon, Indiana"
+531,P.J. Washington,2020,2025,F,06-יול,230,"August 23, 1998",Kentucky
+532,TyTy Washington Jr.,2023,2025,G,06-מרץ,197,"November 15, 2001",Kentucky
+533,Lindy Waters III,2022,2025,G,06-יונ,215,"July 28, 1997",Oklahoma State
+534,Trendon Watford,2022,2025,F,06-ספט,240,"November 9, 2000",LSU
+535,Anton Watson,2025,2025,F,06-אוג,225,"October 6, 2000",Gonzaga
+536,Peyton Watson,2023,2025,G-F,06-אוג,200,"September 11, 2002",UCLA
+537,Jaylen Wells,2025,2025,F,06-יול,206,"August 26, 2003","Sonoma State University, Washington State"
+538,Victor Wembanyama,2024,2025,C-F,07-מרץ,235,"January 4, 2004",
+539,Blake Wesley,2023,2025,G,06-מאי,185,"March 16, 2003",Notre Dame
+540,Russell Westbrook,2009,2025,G,06-אפר,200,"November 12, 1988",UCLA
+541,Phillip Wheeler,2025,2025,F,06-ספט,211,"April 23, 2002",
+542,Coby White,2020,2025,G,06-מאי,195,"February 16, 2000",UNC
+543,Derrick White,2018,2025,G,06-אפר,190,"July 2, 1994","Colorado-Colorado Springs, Colorado"
+544,Cam Whitmore,2024,2025,F,06-יול,232,"July 8, 2004",Villanova
+545,Aaron Wiggins,2022,2025,G,06-יונ,200,"January 2, 1999",Maryland
+546,Andrew Wiggins,2015,2025,F-G,06-יול,197,"February 23, 1995",Kansas
+547,Alondes Williams,2023,2025,G,06-אפר,210,"June 19, 1999","Triton College, Oklahoma, Wake Forest"
+548,Brandon Williams,2022,2025,G,06-ינו,190,"November 22, 1999",Arizona
+549,Cody Williams,2025,2025,G-F,06-יול,190,"November 20, 2004",Colorado
+550,Grant Williams,2020,2025,F,06-יונ,236,"November 30, 1998",Tennessee
+551,Jalen Williams,2023,2025,G,06-יונ,220,"April 14, 2001",Santa Clara
+552,Jaylin Williams,2023,2025,F,06-אוג,250,"June 29, 2002",Arkansas
+553,Jeenathan Williams,2023,2025,G,06-מאי,205,"February 12, 1999",Buffalo
+554,Kenrich Williams,2019,2025,G-F,06-יול,210,"December 2, 1994",TCU
+555,Mark Williams,2023,2025,C,7-0,241,"December 16, 2001",Duke
+556,Patrick Williams,2021,2025,F,06-יול,215,"August 26, 2001",Florida State
+557,Robert Williams,2019,2025,C-F,06-ספט,237,"October 17, 1997",Texas A&M
+558,Vince Williams Jr.,2023,2025,F,06-אפר,205,"August 30, 2000",VCU
+559,Ziaire Williams,2022,2025,F,06-ספט,215,"September 12, 2001",Stanford
+560,Zion Williamson,2020,2025,F-C,06-יונ,284,"July 6, 2000",Duke
+561,Jalen Wilson,2024,2025,F,06-אוג,225,"November 4, 2000",Kansas
+562,James Wiseman,2021,2025,C,7-0,240,"March 31, 2001",Memphis
+563,Isaiah Wong,2024,2025,G,06-אפר,184,"January 28, 2001",Miami (FL)
+564,Delon Wright,2016,2025,G,06-מאי,185,"April 26, 1992",Utah
+565,Guerschon Yabusele,2018,2025,F-C,06-אוג,260,"December 17, 1995",
+566,Jahmir Young,2025,2025,G,06-פבר,185,"October 7, 2000","UNC Charlotte, Maryland"
+567,Trae Young,2019,2025,G,06-ינו,164,"September 19, 1998",Oklahoma
+568,Ivica Zubac,2017,2025,C,7-0,240,"March 18, 1997",
+569,Domantas Sabonis,2017,2025,C-F,06-אוק,240,"May 3, 1996",Gonzaga
+570,Tidjane Salaֳ¼n,2025,2025,F,06-ספט,207,"August 10, 2005",
+571,Adama Sanogo,2024,2025,F,06-ספט,245,"February 12, 2002",UConn
+572,Gui Santos,2024,2025,F,06-אוג,209,"June 22, 2002",
+573,Dario ֵ ariִ‡,2017,2025,F-C,06-אוק,225,"April 8, 1994",
+574,Alex Sarr,2025,2025,F,7-0,205,"April 26, 2005",
+575,Marcus Sasser,2024,2025,G,06-פבר,195,"September 21, 2000",Houston
+576,Baylor Scheierman,2025,2025,G,06-יונ,205,"September 26, 2000","South Dakota State, Creighton"
+577,Dennis Schrֳ¶der,2014,2025,G,06-ינו,172,"September 15, 1993",
+578,Alperen ֵengֳ¼n,2022,2025,C-F,06-נוב,235,"July 25, 2002",
+579,Brice Sensabaugh,2024,2025,F,06-יונ,235,"October 30, 2003",Ohio State
+580,Collin Sexton,2019,2025,G,06-מרץ,190,"January 4, 1999",Alabama
+581,Landry Shamet,2019,2025,G,06-אפר,190,"March 13, 1997",Wichita State
+582,Terrence Shannon Jr.,2025,2025,G,06-יונ,215,"July 30, 2000","Texas Tech, Illinois"
+583,Day'Ron Sharpe,2022,2025,C,06-נוב,265,"November 6, 2001",UNC
+584,Shaedon Sharpe,2023,2025,G,06-יונ,200,"May 30, 2003",Kentucky
+585,Jamal Shead,2025,2025,G,6-0,200,"June 24, 2002",Houston
+586,Ben Sheppard,2024,2025,G,06-יונ,190,"July 16, 2001",Belmont
+587,Reed Sheppard,2025,2025,G,06-פבר,185,"June 24, 2004",Kentucky
+588,Pascal Siakam,2017,2025,F-C,06-אוג,230,"April 2, 1994",New Mexico State
+589,Ben Simmons,2018,2025,G-F,06-אוק,240,"July 20, 1996",LSU
+590,Anfernee Simons,2019,2025,G,06-מרץ,181,"June 8, 1999",
+591,KJ Simpson,2025,2025,G,6-0,189,"August 8, 2002",Colorado
+592,Jaylen Sims,2025,2025,G,06-יונ,195,"December 11, 1998",UNC Wilmington
+593,Jericho Sims,2022,2025,F,06-אוק,245,"October 20, 1998",Texas
+594,Marcus Smart,2015,2025,G,06-מרץ,220,"March 6, 1994",Oklahoma State
+595,Dru Smith,2023,2025,G,06-מרץ,203,"December 30, 1997","University of Evansville, Missouri"
+596,Jabari Smith Jr.,2023,2025,F,06-נוב,220,"May 13, 2003",Auburn
+597,Jalen Smith,2021,2025,F,06-אוק,215,"March 16, 2000",Maryland
+598,Nick Smith Jr.,2024,2025,G,06-פבר,185,"April 18, 2004",Arkansas
+599,Tolu Smith,2025,2025,F,06-אוק,254,"July 26, 2000","Western Kentucky, Mississippi State"
+600,Tyler Smith,2025,2025,F,06-נוב,224,"November 2, 2004",
+601,Jeremy Sochan,2023,2025,F-G,06-אוג,230,"May 20, 2003",Baylor
+602,Cam Spencer,2025,2025,G,06-מרץ,205,"April 6, 2000","Loyola (MD), Rutgers University, UConn"
+603,Pat Spencer,2024,2025,G,06-מרץ,205,"July 4, 1996","Loyola (MD), Northwestern"
+604,Jaden Springer,2022,2025,G,06-אפר,204,"September 25, 2002",Tennessee
+605,Isaiah Stevens,2025,2025,G,6-0,185,"November 1, 2000",Colorado State
+606,Lamar Stevens,2021,2025,F,06-יונ,230,"July 9, 1997",Penn State
+607,Isaiah Stewart,2021,2025,F-C,06-אוג,250,"May 22, 2001",Washington
+608,Julian Strawther,2024,2025,F,06-יול,205,"April 18, 2002",Gonzaga
+609,Max Strus,2020,2025,G,06-מאי,215,"March 28, 1996","Lewis (IL), DePaul"
+610,Jalen Suggs,2022,2025,G,06-מאי,205,"June 3, 2001",Gonzaga
+611,Cole Swider,2023,2025,F,06-ספט,220,"May 8, 1999","Villanova, Syracuse"
