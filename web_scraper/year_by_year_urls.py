@@ -4,7 +4,7 @@ import re
 def create_valid_years(row):
     base_url = row["url"].replace(".html", "")
     start_year = max(int(row["From"]), 2023)   # minimum 2023
-    end_year = int(row["To"]) if not pd.isna(row["To"]) else 2025  # default if missing
+    end_year = int(row["To"]) if not pd.isna(row["To"]) else 2026  # default if missing
 
     if end_year < 2023:
         return []   # no valid seasons

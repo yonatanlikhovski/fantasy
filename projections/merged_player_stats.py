@@ -1,10 +1,12 @@
 import os
 from glob import glob
+import pandas as pd
 from season_stats import open_file, create_stats
+
 
 def collect_all_csvs(base_dir="data/gamelogs", seasons=None):
     if seasons is None:
-        seasons = ["2023", "2024", "2025"]
+        seasons = ["2023", "2024", "2025", "2026"]
 
     player_files = {}
 
@@ -17,6 +19,7 @@ def collect_all_csvs(base_dir="data/gamelogs", seasons=None):
             player_files[player_id].append((season, path))
 
     return player_files
+
 
 def collect_player_stats(base_dir="data/gamelogs", seasons=None):
     players_stats = {}
@@ -32,10 +35,47 @@ def collect_player_stats(base_dir="data/gamelogs", seasons=None):
 
     return players_stats
 
+
+def flatten_stats(players_stats):
+    rows = []
+
+    for player_id, stats_list in players_stats.items():
+        for season_stats in stats_list:
+            row = {
+                "player_id": player_id,
+                "season": season_stats.get("season"),
+            }
+
+            for stat_name, stat_data in season_stats.items():
+                if stat_name in ["player_id", "season"]:
+                    continue
+
+                if isinstance(stat_data, dict):
+                    for key, value in stat_data.items():
+                        row[f"{stat_name}_{key}"] = value
+                else:
+                    row[stat_name] = stat_data
+
+            rows.append(row)
+
+    return pd.DataFrame(rows)
+
+
+def main():
+    all_stats = collect_player_stats(
+        base_dir="data/gamelogs",
+        seasons=["2023", "2024", "2025", "2026"]
+    )
+
+    out_df = flatten_stats(all_stats)
+
+
+    out_path = "sim_stats/player_season_stats.csv"
+    out_df.to_csv(out_path, index=False, encoding="utf-8")
+
+    print(f"Saved {len(out_df)} player-season rows to {out_path}")
+    print(out_df.head())
+
+
 if __name__ == "__main__":
-    all_stats = collect_player_stats()
-    # show first player as a test
-    first_pid = next(iter(all_stats))
-    print(f"Stats for {first_pid}:")
-    for s in all_stats[first_pid]:
-        print(s["season"], "->", s["pts"])
+    main()

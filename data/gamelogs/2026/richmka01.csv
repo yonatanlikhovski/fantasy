@@ -1,0 +1,4 @@
+player,player_id,season,Rk,Gcar,Gtm,date,Team,Unnamed: 5,opponent,Result,minutes,fgm,fga,FG%,fg3m,fg3a,3P%,2P,2PA,2P%,eFG%,ftm,fta,FT%,orb,drb,trb,ast,stl,blk,tov,PF,pts,GmSc,plus_minus
+Kadary Richmond,richmka01,2026,1.0,1.0,53.0,2026-02-11,,,CLE,"L, 113-138",,2,2,1.0,1,1,1.0,1,1,1.0,1.25,0,0,,1,1,2,1,1,1,0,0,5,7.8,-6
+Kadary Richmond,richmka01,2026,2.0,2.0,54.0,2026-02-19,,,IND,"W, 112-105",,5,7,0.714,0,1,0.0,5,6,0.833,0.714,3,3,1.0,0,5,5,3,1,0,0,1,13,14.3,8
+Kadary Richmond,richmka01,2026,3.0,3.0,55.0,2026-02-20,,,IND,"W, 131-118",,3,7,0.429,1,2,0.5,2,5,0.4,0.5,0,0,,0,3,3,4,6,0,2,1,7,10.6,3

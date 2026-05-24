@@ -3,9 +3,9 @@ from urllib.parse import urljoin
 import pandas as pd
 import random, string, time
 
-BASE_URL = "https://www.basketball-reference.com/players/"  # <- fix
+BASE_URL = "https://www.basketball-reference.com/players/"  
 UAs = [
-    # A few realistic desktop UAs; add more if you like
+
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
@@ -39,7 +39,7 @@ def open_page(url: str, browser) -> pd.DataFrame:
 
     # Optional: keep only active players (To == 2025)
     if "To" in df.columns:
-        df = df[pd.to_numeric(df["To"], errors="coerce") == 2025]
+        df = df[pd.to_numeric(df["To"], errors="coerce") == 2026]
 
     page.close()
     context.close()

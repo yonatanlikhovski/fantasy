@@ -115,7 +115,7 @@ def scrape_one_gamelog(browser, url: str) -> pd.DataFrame:
 # ---------- Orchestrator ----------
 def main():
     # Input URLs: file with columns [player, season, gamelog_url] (from your earlier step)
-    urls_df = pd.read_csv("incremented.csv", encoding="utf-8")
+    urls_df = pd.read_csv("player_gamelog_urls.csv", encoding="utf-8")
 
     # Ensure output root exists
     OUT_ROOT.mkdir(parents=True, exist_ok=True)

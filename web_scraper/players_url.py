@@ -36,7 +36,7 @@ def create_players_urls(csv_path: str) -> pd.DataFrame:
     return out
 
 if __name__ == "__main__":
-    out_df = create_players_urls("a.csv")
+    out_df = create_players_urls("web_scraper/active_players.csv")
     # Save to CSV
     out_df.to_csv("player_urls.csv", index=False, encoding="utf-8")
     print(out_df.head())
