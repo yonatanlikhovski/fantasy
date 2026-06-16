@@ -8,17 +8,17 @@ import numpy as np
 import pandas as pd
 
 # ---------- Paths ----------
-SIM_RESULTS_CSV   = Path("sim_stats") / "weekly_sim_results.csv"
-FEATURES_CSV      = Path("sim_stats") / "player_features_summary.csv"
-H2H_VALUE_CSV     = Path("sim_stats") / "h2h_value.csv"  # optional, for comparison
+SIM_RESULTS_CSV   = Path("sim_stats") / "projected_2027_weekly.csv"
+FEATURES_CSV      = Path("sim_stats") / "player_features_train_2023_2026.csv"
+H2H_VALUE_CSV     = Path("sim_stats") / "h2h_value_2027.csv"
 
 OUT_DIR           = Path("sim_stats")
-ROSTERS_OUT       = OUT_DIR / "draft_rosters.csv"
-TEAM_AVG_OUT      = OUT_DIR / "draft_team_averages.csv"
-STANDINGS_OUT     = OUT_DIR / "draft_standings.csv"
-WS_PLAYERS_OUT    = OUT_DIR / "draft_win_shares_players.csv"
-WS_SUMMARY_OUT    = OUT_DIR / "draft_win_shares_summary.csv"
-WS_VS_H2H_OUT     = OUT_DIR / "ws_vs_h2h.csv"
+ROSTERS_OUT       = OUT_DIR / "draft_rosters_2027.csv"
+TEAM_AVG_OUT      = OUT_DIR / "draft_team_averages_2027.csv"
+STANDINGS_OUT     = OUT_DIR / "draft_standings_2027.csv"
+WS_PLAYERS_OUT    = OUT_DIR / "draft_win_shares_players_2027.csv"
+WS_SUMMARY_OUT    = OUT_DIR / "draft_win_shares_summary_2027.csv"
+WS_VS_H2H_OUT     = OUT_DIR / "ws_vs_h2h_2027.csv"
 
 COUNT_CATS = ["PTS","REB","AST","STL","BLK","FG3M","TOV"]
 

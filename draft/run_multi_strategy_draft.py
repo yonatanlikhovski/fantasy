@@ -47,10 +47,11 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # ------------- Load player pool -------------
-    df = load_player_pool(Path("sim_stats/weekly_sim_results.csv"),
-                          Path("sim_stats/player_features_summary.csv"),
-                          args.gpw)
-
+    df = load_player_pool(
+        Path("sim_stats/projected_2027_weekly.csv"),
+        Path("sim_stats/player_features_train_2023_2026.csv"),
+        args.gpw
+    )   
     # ------------- Define team strategies -------------
     # 9 themed strategies + team 10 is SOLID (balanced, safer picks)
     # You can tweak any weight or punt set below.
@@ -95,12 +96,12 @@ def main():
         for p in rosters[t]:
             r_rows.append({"team": t+1, "player_id": p, "strategy": meta["label"], "punts": meta["punts"], "risk": meta["risk"]})
     rosters_df = pd.DataFrame(r_rows)
-    rosters_df.to_csv(OUT_DIR / "strategic_draft_rosters.csv", index=False)
+    rosters_df.to_csv(OUT_DIR / "strategic_draft_rosters_2027.csv", index=False)
 
     # ------------- Inspect deterministic team averages -------------
     team_avg = team_averages(df, rosters)
     team_avg["team"] = team_avg["team"] + 1
-    team_avg.to_csv(OUT_DIR / "strategic_draft_team_averages.csv", index=False)
+    team_avg.to_csv(OUT_DIR / "strategic_draft_team_averages_2027.csv", index=False)
 
     # ------------- Fast WS simulation -------------
     standings, ws_players = compute_ws_fast(df, rosters, trials=args.trials, seed=args.seed)
@@ -115,13 +116,13 @@ def main():
     standings = standings.sort_values(["W","cat_pts"], ascending=[False, False]).reset_index(drop=True)
 
     # ------------- Save -------------
-    standings.to_csv(OUT_DIR / "strategic_draft_standings.csv", index=False)
-    ws_players.to_csv(OUT_DIR / "strategic_draft_win_shares_players.csv", index=False)
+    standings.to_csv(OUT_DIR / "strategic_draft_standings_2027.csv", index=False)
+    ws_players.to_csv(OUT_DIR / "strategic_draft_win_shares_players_2027.csv", index=False)
 
     # Team WS totals
     ws_summary = ws_players.groupby(["team","strategy","punts","risk"], as_index=False)["win_shares"].sum().rename(columns={"win_shares":"team_win_shares_sum"})
     ws_summary = ws_summary.sort_values("team_win_shares_sum", ascending=False)
-    ws_summary.to_csv(OUT_DIR / "strategic_draft_win_shares_summary.csv", index=False)
+    ws_summary.to_csv(OUT_DIR / "strategic_draft_win_shares_summary_2027.csv", index=False)
 
     # ------------- Console peek -------------
     print("\n=== Multi-strategy draft: team assignments ===")

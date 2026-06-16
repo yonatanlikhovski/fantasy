@@ -14,7 +14,7 @@ import pandas as pd
 from merged_player_stats import collect_all_csvs
 from season_stats import open_file
 
-OUT_PATH = Path("sim_stats") / "player_features_summary.csv"
+OUT_PATH = Path("sim_stats") / "player_features_train_2023_2026.csv"
 
 # Stats we feed into the simulator (per-game)
 COUNTING = ["PTS", "REB", "AST", "STL", "BLK", "TOV", "FG3M"]
@@ -34,94 +34,297 @@ SRC_MAP = {
     "FTA": "fta",
 }
 
+SEASON_WEIGHTS = {
+    "2023": 0.10,
+    "2024": 0.20,
+    "2025": 0.30,
+    "2026": 0.40,
+}
+
+
+LEAGUE_AVG_DURABILITY = 65
+DURABILITY_REGRESSION = 0.15
+
+COUNTING_STD_MULT = 1.15
+PERCENT_STD_MULT = 1.25
+ROLE_STD_MULT = 1.20
+ROLE_MEAN_BLEND = 0.70
+ROLE_TREND_STRENGTH = 0.25
+
 def binomial_std(p: float, attempts_mean: float) -> float:
     """Std of a proportion for ~Binomial with mean attempts per game."""
     attempts_mean = max(1.0, float(attempts_mean))
     v = p * (1 - p) / attempts_mean
     return float(math.sqrt(v))
 
+def numeric_col(df: pd.DataFrame, col: str) -> pd.Series:
+    if col not in df.columns:
+        return pd.Series(0.0, index=df.index)
+    return pd.to_numeric(df[col], errors="coerce").fillna(0.0)
+def role_proxy(df: pd.DataFrame) -> pd.Series:
+    """
+    A minutes-free approximation of player role / opportunity.
+
+    Higher value means the player was more involved in the game.
+    """
+    fga = numeric_col(df, "fga")
+    fta = numeric_col(df, "fta")
+    ast = numeric_col(df, "ast")
+    tov = numeric_col(df, "tov")
+    reb = numeric_col(df, "trb")
+    stl = numeric_col(df, "stl")
+    blk = numeric_col(df, "blk")
+
+    role = (
+        fga
+        + 0.44 * fta
+        + ast
+        + tov
+        + 0.5 * reb
+        + 2.0 * stl
+        + 2.0 * blk
+    )
+
+    return role.clip(lower=0.0)
+
 def per_player_aggregate(paths: List[Tuple[str, str]]) -> Dict[str, float]:
     """
-    Aggregate all seasons for one player.
-    Returns a dict of per-game means/stds and durability.
+    Aggregate player seasons using recency-weighted season summaries.
+    Gives more weight to recent seasons and uses a role/opportunity proxy.
     """
-    # Concatenate all games across seasons
-    games: List[pd.DataFrame] = []
-    total_fgm = total_fga = total_ftm = total_fta = 0.0
-    total_gp = 0
+    season_data = {}
 
     for season, p in paths:
-        df = open_file(p)  # user’s helper
+        season = str(season)
+        df = open_file(p)
+
         if df is None or df.empty:
             continue
-        # Ensure lower-case columns for robustness
+
         df = df.rename(columns={c: c.lower() for c in df.columns})
-        # keep only needed columns that exist
-        keep_cols = [SRC_MAP[s] for s in ["PTS","REB","AST","STL","BLK","TOV","FG3M","FGM","FGA","FTM","FTA"] if SRC_MAP[s] in df.columns]
-        df = df[keep_cols].copy()
+        gp = len(df)
 
-        # Totals for % from totals
-        total_fgm += float(df.get("fgm", pd.Series(dtype=float)).sum())
-        total_fga += float(df.get("fga", pd.Series(dtype=float)).sum())
-        total_ftm += float(df.get("ftm", pd.Series(dtype=float)).sum())
-        total_fta += float(df.get("fta", pd.Series(dtype=float)).sum())
+        if gp == 0:
+            continue
 
-        total_gp += len(df)
-        games.append(df)
+        rec = {"gp": gp}
 
-    if not games or total_gp == 0:
+        # Role / opportunity proxy
+        role = role_proxy(df)
+        rec["ROLE_mean"] = float(role.mean())
+        rec["ROLE_std"] = float(role.std(ddof=1)) if len(role) > 1 else 0.0
+
+        total_role = float(role.sum())
+
+        # Counting stats and shooting volume stats
+        for stat in COUNTING + ["FGA", "FTA"]:
+            src = SRC_MAP[stat]
+            s = numeric_col(df, src)
+
+            rec[f"{stat}_mean"] = float(s.mean())
+            rec[f"{stat}_std"] = float(s.std(ddof=1)) if len(s) > 1 else 0.0
+
+            if total_role > 0:
+                rec[f"{stat}_per_role"] = float(s.sum() / total_role)
+            else:
+                rec[f"{stat}_per_role"] = 0.0
+
+        # Shooting totals — outside the stat loop
+        fgm = float(numeric_col(df, "fgm").sum())
+        fga = float(numeric_col(df, "fga").sum())
+        ftm = float(numeric_col(df, "ftm").sum())
+        fta = float(numeric_col(df, "fta").sum())
+
+        rec["FGM_total"] = fgm
+        rec["FGA_total"] = fga
+        rec["FTM_total"] = ftm
+        rec["FTA_total"] = fta
+
+        rec["FGP_mean"] = float(fgm / fga) if fga > 0 else 0.0
+        rec["FTP_mean"] = float(ftm / fta) if fta > 0 else 0.0
+
+        # Important: save this season summary inside the season loop
+        season_data[season] = rec
+
+    if not season_data:
         raise ValueError("No games found for player")
 
-    allg = pd.concat(games, ignore_index=True)
+    raw_weights = {
+        season: SEASON_WEIGHTS.get(season, 1.0)
+        for season in season_data.keys()
+    }
 
-    # Per-game means & stds for counting stats
+    weight_sum = sum(raw_weights.values())
+    weights = {
+        season: raw_weights[season] / weight_sum
+        for season in raw_weights
+    }
+
     feat: Dict[str, float] = {}
+
+    def weighted_mean(key: str) -> float:
+        return float(sum(weights[s] * season_data[s][key] for s in season_data))
+
+    def weighted_std(mean_key: str, std_key: str, mult: float = 1.0) -> float:
+        mu = weighted_mean(mean_key)
+
+        var = sum(
+            weights[s] * (
+                season_data[s][std_key] ** 2
+                + (season_data[s][mean_key] - mu) ** 2
+            )
+            for s in season_data
+        )
+
+        return float(math.sqrt(max(0.0, var)) * mult)
+
+    # Role / opportunity projection
+    feat["ROLE_mean"] = weighted_mean("ROLE_mean")
+    feat["ROLE_std"] = weighted_std(
+        "ROLE_mean",
+        "ROLE_std",
+        mult=ROLE_STD_MULT
+    )
+
+    available_seasons = sorted(season_data.keys())
+
+    if len(available_seasons) >= 2:
+        prev_season = available_seasons[-2]
+        last_season = available_seasons[-1]
+
+        role_delta = (
+            season_data[last_season]["ROLE_mean"]
+            - season_data[prev_season]["ROLE_mean"]
+        )
+
+        feat["ROLE_mean"] = feat["ROLE_mean"] + ROLE_TREND_STRENGTH * role_delta
+        feat["ROLE_mean"] = max(0.0, feat["ROLE_mean"])
+
+    # Counting stats
     for stat in COUNTING:
-        src = SRC_MAP[stat]
-        if src not in allg.columns:
-            # fallbacks
-            feat[f"{stat}_mean"] = 0.0
-            feat[f"{stat}_std"] = 0.5
-        else:
-            s = allg[src].astype(float)
-            feat[f"{stat}_mean"] = float(s.mean())
-            # robust std: if 1 game, std = 0
-            feat[f"{stat}_std"] = float(s.std(ddof=1)) if len(s) > 1 else 0.0
+        raw_mean = weighted_mean(f"{stat}_mean")
+        per_role = weighted_mean(f"{stat}_per_role")
+        role_mean = feat["ROLE_mean"] * per_role
 
-    # Shooting volumes (per-game mean/std)
-    for vol, src in (("FGA", "fga"), ("FTA", "fta")):
-        if src in allg.columns:
-            s = allg[src].astype(float)
-            feat[f"{vol}_mean"] = float(s.mean())
-            feat[f"{vol}_std"] = float(s.std(ddof=1)) if len(s) > 1 else 0.0
-        else:
-            feat[f"{vol}_mean"] = 0.0
-            feat[f"{vol}_std"] = 0.5
+        feat[f"{stat}_per_role"] = per_role
+        feat[f"{stat}_mean"] = (
+            ROLE_MEAN_BLEND * role_mean
+            + (1 - ROLE_MEAN_BLEND) * raw_mean
+        )
 
-    # Percentages from TOTALS across all seasons
-    fgp_mean = float(total_fgm / total_fga) if total_fga > 0 else 0.0
-    ftp_mean = float(total_ftm / total_fta) if total_fta > 0 else 0.0
-    # Std via binomial around per-game attempt means
-    fgp_std = binomial_std(fgp_mean, feat["FGA_mean"]) if feat["FGA_mean"] > 0 else 0.05
-    ftp_std = binomial_std(ftp_mean, feat["FTA_mean"]) if feat["FTA_mean"] > 0 else 0.05
-    feat["FGP_mean"], feat["FGP_std"] = float(np.clip(fgp_mean, 0, 1)), float(fgp_std)
-    feat["FTP_mean"], feat["FTP_std"] = float(np.clip(ftp_mean, 0, 1)), float(ftp_std)
+        feat[f"{stat}_std"] = weighted_std(
+            f"{stat}_mean",
+            f"{stat}_std",
+            mult=COUNTING_STD_MULT
+        )
 
-    # Durability = average games per season (clipped to [0,82])
-    # If we know how many seasons we read:
-    #   paths is a list of (season, path) that existed and were non-empty
-    # Use count of non-empty seasons to compute per-season GP mean
-    seasons_non_empty = max(1, sum(
-        1 for _, p in paths
-        if (lambda d: d is not None and not d.empty)(open_file(p))
-    ))
-    durability = int(round(total_gp / seasons_non_empty))
+    # Shooting volumes
+    for stat in ["FGA", "FTA"]:
+        raw_mean = weighted_mean(f"{stat}_mean")
+        per_role = weighted_mean(f"{stat}_per_role")
+        role_mean = feat["ROLE_mean"] * per_role
+
+        feat[f"{stat}_per_role"] = per_role
+        feat[f"{stat}_mean"] = (
+            ROLE_MEAN_BLEND * role_mean
+            + (1 - ROLE_MEAN_BLEND) * raw_mean
+        )
+
+        feat[f"{stat}_std"] = weighted_std(
+            f"{stat}_mean",
+            f"{stat}_std",
+            mult=COUNTING_STD_MULT
+        )
+
+    # FG% weighted by recent shooting volume
+    fga_weighted = sum(
+        weights[s] * season_data[s]["FGA_mean"]
+        for s in season_data
+    )
+
+    if fga_weighted > 0:
+        fgp_mean = sum(
+            weights[s] * season_data[s]["FGP_mean"] * season_data[s]["FGA_mean"]
+            for s in season_data
+        ) / fga_weighted
+    else:
+        fgp_mean = 0.0
+
+    # FT% weighted by recent shooting volume
+    fta_weighted = sum(
+        weights[s] * season_data[s]["FTA_mean"]
+        for s in season_data
+    )
+
+    if fta_weighted > 0:
+        ftp_mean = sum(
+            weights[s] * season_data[s]["FTP_mean"] * season_data[s]["FTA_mean"]
+            for s in season_data
+        ) / fta_weighted
+    else:
+        ftp_mean = 0.0
+
+    feat["FGP_mean"] = float(np.clip(fgp_mean, 0, 1))
+    feat["FTP_mean"] = float(np.clip(ftp_mean, 0, 1))
+
+    # Shooting uncertainty
+    fgp_between_var = sum(
+        weights[s] * (season_data[s]["FGP_mean"] - feat["FGP_mean"]) ** 2
+        for s in season_data
+    )
+
+    ftp_between_var = sum(
+        weights[s] * (season_data[s]["FTP_mean"] - feat["FTP_mean"]) ** 2
+        for s in season_data
+    )
+
+    feat["FGP_std"] = float(
+        math.sqrt(
+            binomial_std(feat["FGP_mean"], feat["FGA_mean"]) ** 2
+            + fgp_between_var
+        )
+        * PERCENT_STD_MULT
+    )
+
+    feat["FTP_std"] = float(
+        math.sqrt(
+            binomial_std(feat["FTP_mean"], feat["FTA_mean"]) ** 2
+            + ftp_between_var
+        )
+        * PERCENT_STD_MULT
+    )
+
+    # Durability
+    weighted_gp = sum(
+        weights[s] * season_data[s]["gp"]
+        for s in season_data
+    )
+
+    durability = (
+        (1 - DURABILITY_REGRESSION) * weighted_gp
+        + DURABILITY_REGRESSION * LEAGUE_AVG_DURABILITY
+    )
+
+    gp_var = sum(
+        weights[s] * (season_data[s]["gp"] - weighted_gp) ** 2
+        for s in season_data
+    )
+
+    durability_std = max(8.0, math.sqrt(max(0.0, gp_var)))
+
+    durability = int(round(durability))
     durability = max(0, min(82, durability))
+
     feat["durability"] = durability
+    feat["durability_std"] = float(durability_std)
 
     return feat
 
 def main(seasons: List[str] | None = None):
+    # Collect player -> [(season, path), ...]
+    if seasons is None:
+        seasons = ["2023", "2024", "2025","2026"]
+
     # Collect player -> [(season, path), ...]
     player_files = collect_all_csvs(seasons=seasons)
     rows = []
@@ -132,6 +335,10 @@ def main(seasons: List[str] | None = None):
             row = {
                 "player_id": pid,
                 "durability": feat["durability"],
+                "durability_std": feat.get("durability_std", 8.0),
+                    
+                "ROLE_mean": feat["ROLE_mean"],
+                "ROLE_std": feat["ROLE_std"],
 
                 "PTS_mean": feat["PTS_mean"], "PTS_std": feat["PTS_std"],
                 "REB_mean": feat["REB_mean"], "REB_std": feat["REB_std"],
@@ -141,12 +348,23 @@ def main(seasons: List[str] | None = None):
                 "TOV_mean": feat["TOV_mean"], "TOV_std": feat["TOV_std"],
 
                 "FG3M_mean": feat["FG3M_mean"], "FG3M_std": feat["FG3M_std"],
+                "PTS_per_role": feat["PTS_per_role"],
+                "REB_per_role": feat["REB_per_role"],
+                "AST_per_role": feat["AST_per_role"],
+                "STL_per_role": feat["STL_per_role"],
+                "BLK_per_role": feat["BLK_per_role"],
+                "TOV_per_role": feat["TOV_per_role"],
+                "FG3M_per_role": feat["FG3M_per_role"],
+                "FGA_per_role": feat["FGA_per_role"],
+                "FTA_per_role": feat["FTA_per_role"],
 
                 "FGA_mean": feat["FGA_mean"], "FGA_std": feat["FGA_std"],
                 "FGP_mean": feat["FGP_mean"], "FGP_std": feat["FGP_std"],
 
                 "FTA_mean": feat["FTA_mean"], "FTA_std": feat["FTA_std"],
                 "FTP_mean": feat["FTP_mean"], "FTP_std": feat["FTP_std"],
+                "source": "nba_history",
+                "train_seasons": ",".join(seasons),
             }
             rows.append(row)
         except Exception as e:
@@ -158,6 +376,6 @@ def main(seasons: List[str] | None = None):
     out.to_csv(OUT_PATH, index=False)
     print(f"✅ Wrote {len(out)} players → {OUT_PATH}")
 
+
 if __name__ == "__main__":
-    # By default, uses seasons = ["2023","2024","2025"] via collect_all_csvs
     main()

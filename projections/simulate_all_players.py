@@ -4,20 +4,20 @@ from monte_carlo_sim import simulate_many_seasons
 
 def main():
     # Load features CSV (already built by build_player_features_summary.py)
-    df = pd.read_csv("sim_stats/player_features_summary.csv")
+    df = pd.read_csv("sim_stats/player_features_train_2023_2026.csv")
 
     results = []
 
-    for _, row in df.iterrows():
+    for idx, (_, row) in enumerate(df.iterrows()):
         player = row.to_dict()
 
         # Run simulation
         agg, ci, _ = simulate_many_seasons(
             player,
-            n_seasons=1000,
+            n_seasons=500,
             games_in_season=82,
             games_per_week=3.5,
-            seed=42
+            seed=42 + idx * 1009
         )
        
         # Flatten into a single row
@@ -33,8 +33,9 @@ def main():
 
     # Save to CSV
     out_df = pd.DataFrame(results)
-    out_df.to_csv("sim_stats/weekly_sim_results.csv", index=False)
-    print(f"✅ Simulated {len(results)} players → sim_stats/weekly_sim_results.csv")
+    out_df.to_csv("sim_stats/projected_2027_weekly.csv", index=False)   
+    print(f"✅ Simulated {len(results)} players → sim_stats/projected_2027_weekly.csv")
 
 if __name__ == "__main__":
     main()
+ 

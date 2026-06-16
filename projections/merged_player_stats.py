@@ -6,7 +6,7 @@ from season_stats import open_file, create_stats
 
 def collect_all_csvs(base_dir="data/gamelogs", seasons=None):
     if seasons is None:
-        seasons = ["2023", "2024", "2025", "2026"]
+        seasons = ["2023", "2024", "2025"]
 
     player_files = {}
 
