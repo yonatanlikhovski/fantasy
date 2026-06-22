@@ -15,6 +15,17 @@ py visual_helper/generate_visualizations.py --theme value   # one theme only
 ```
 
 Figures are saved as 200 dpi PNGs, grouped into five themes (one folder each).
+All figures follow the course's visualization principles (Scale, Conditioning,
+Perception, Transformation, Context, Smoothing): take-away titles, labelled axes,
+reference lines, annotated outliers, captions, a colorblind-safe palette
+(blue/orange, no red+green) and perceptually-uniform colormaps (viridis).
+
+`Visualization_Insights.docx` (in this folder) explains, in English, what each
+figure shows and the concrete take-away to cite in the writeup. Regenerate it with:
+
+```bash
+py visual_helper/build_insights_doc.py
+```
 
 ---
 
@@ -43,11 +54,12 @@ data is complete and reasonable. Source: `sim_stats/player_season_stats.csv`.
 How the H2H fantasy value is built from the nine scoring categories. Sources:
 `sim_stats/h2h_value_2027.csv` and `sim_stats/player_season_stats.csv`.
 
-- **`category_breakdown_top15.png`** - Horizontal stacked bar for the top 15
-  players by `rank_H2H`. Each segment is one of the nine normalized category
-  scores (`PTS, REB, AST, STL, BLK, FG3M, TOV, FG, FT`), so you can see *where*
-  each elite player's fantasy value comes from. Turnovers are shown by magnitude
-  (they contribute negatively in the model).
+- **`category_breakdown_top15.png`** - Heatmap of the top 15 players by `rank_H2H`
+  against their normalized score (0-1) in each of the nine categories
+  (`PTS, REB, AST, STL, BLK, FG3M, TOV, FG, FT`), so you can see *where* each elite
+  player's fantasy value comes from. A heatmap is used instead of a stacked bar to
+  avoid the hard-to-read "jiggling baseline" of stacked segments. Turnovers are
+  stored as negative because fewer is better.
 
 - **`category_scarcity.png`** - Bar chart of each category's coefficient of
   variation (std / mean) across all players. Higher bars mean the stat is scarcer
