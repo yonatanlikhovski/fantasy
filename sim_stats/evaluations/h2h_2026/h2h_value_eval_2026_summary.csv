@@ -1,2 +1,0 @@
-n_projected,n_actual,n_overlap_evaluated,n_pred_only,n_actual_only,h2h_mae,h2h_rmse,h2h_bias_pred_minus_actual,h2h_pearson,h2h_spearman,rank_mae,rank_median_abs_error,top50_recall,top50_precision,top100_recall,top100_precision
-574,573,465,109,108,1.7142908435750257,2.199157658362173,0.133859552064179,0.6790244353000583,0.6734801128663006,100.06666666666666,81.0,0.6,0.5625,0.6195652173913043,0.6

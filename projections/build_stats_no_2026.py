@@ -14,7 +14,7 @@ import pandas as pd
 from merged_player_stats import collect_all_csvs
 from season_stats import open_file
 
-OUT_PATH = Path("sim_stats") / "player_features_train_2023_2026.csv"
+OUT_PATH = Path("sim_stats") / "player_features_train_2023_2025.csv"
 
 # Stats we feed into the simulator (per-game)
 COUNTING = ["PTS", "REB", "AST", "STL", "BLK", "TOV", "FG3M"]
@@ -36,10 +36,9 @@ SRC_MAP = {
 }
 
 SEASON_WEIGHTS = {
-    "2023": 0.10,
-    "2024": 0.20,
-    "2025": 0.30,
-    "2026": 0.40,
+    "2023": 0.15,
+    "2024": 0.25,
+    "2025": 0.5
 }
 
 LEAGUE_AVG_DURABILITY = 65
@@ -464,7 +463,7 @@ def per_player_aggregate(paths: List[Tuple[str, str]]) -> Dict:
 
 def main(seasons: List[str] | None = None):
     if seasons is None:
-        seasons = ["2023", "2024", "2025", "2026"]
+        seasons = ["2023", "2024", "2025"]
 
     player_files = collect_all_csvs(seasons=seasons)
     rows = []

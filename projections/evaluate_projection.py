@@ -12,12 +12,67 @@ def corr(x, y, method):
     return frame["x"].corr(frame["y"], method=method)
 
 
+def clean_player_ids(df: pd.DataFrame, label: str) -> pd.DataFrame:
+    """
+    Clean player_id values before matching projected vs actual.
+    """
+    if "player_id" not in df.columns:
+        raise KeyError(f"{label} CSV must contain a 'player_id' column.")
+
+    df = df.copy()
+    df["player_id"] = (
+        df["player_id"]
+        .astype(str)
+        .str.strip()
+        .str.rstrip("*")
+        .str.strip()
+    )
+
+    return df
+
+
+def report_and_deduplicate(df: pd.DataFrame, label: str) -> pd.DataFrame:
+    """
+    The evaluation merge requires one row per player_id.
+    If duplicate real names exist, save them for debugging and keep the first row.
+    """
+    df = df.copy()
+
+    dupes = df[df["player_id"].duplicated(keep=False)].copy()
+
+    if not dupes.empty:
+        out_path = Path("sim_stats") / f"duplicate_{label}_player_ids.csv"
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        dupes.to_csv(out_path, index=False)
+
+        print(f"\n⚠️ Duplicate player_id rows found in {label}: {len(dupes)} rows")
+        print(f"Saved duplicate rows -> {out_path}")
+
+        show_cols = ["player_id"]
+        if "source_file_id" in dupes.columns:
+            show_cols.append("source_file_id")
+
+        print(
+            dupes[show_cols]
+            .sort_values("player_id")
+            .to_string(index=False)
+        )
+
+    return df.drop_duplicates(subset=["player_id"], keep="first").copy()
+
+
 def main():
     pred_path = Path("sim_stats") / "projected_2026_weekly.csv"
     actual_path = Path("sim_stats") / "actual_2026_weekly.csv"
 
     pred = pd.read_csv(pred_path)
     actual = pd.read_csv(actual_path)
+
+    pred = clean_player_ids(pred, "projected")
+    actual = clean_player_ids(actual, "actual")
+
+    pred = report_and_deduplicate(pred, "projected")
+    actual = report_and_deduplicate(actual, "actual")
 
     # Debug/exclusion lists before renaming columns
     pred_ids = set(pred["player_id"])
@@ -101,7 +156,10 @@ def main():
         ci_hi = f"pred_{stat}_ci_hi"
 
         if ci_lo in df.columns and ci_hi in df.columns:
-            coverage = ((df[actual_col] >= df[ci_lo]) & (df[actual_col] <= df[ci_hi])).mean()
+            coverage = (
+                (df[actual_col] >= df[ci_lo])
+                & (df[actual_col] <= df[ci_hi])
+            ).mean()
         else:
             coverage = np.nan
 
