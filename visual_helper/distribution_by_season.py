@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 DEFAULT_INPUT = Path("sim_stats/player_season_stats.csv")
-DEFAULT_OUT_DIR = Path("visual_helper/plots/distributions_by_season")
+DEFAULT_OUT_DIR = Path("plots/distributions_by_season")
 
 
 def load_stats(csv_path: Path) -> pd.DataFrame:
@@ -15,12 +15,14 @@ def load_stats(csv_path: Path) -> pd.DataFrame:
     df = pd.read_csv(csv_path)
 
     if "season" not in df.columns:
-        raise ValueError("CSV must contain a 'season' column")
-
-    if "player_id" not in df.columns:
-        raise ValueError("CSV must contain a 'player_id' column")
-
-    df["season"] = pd.to_numeric(df["season"], errors="coerce").astype("Int64")
+        if "train_seasons" in df.columns:
+            # The data is aggregated across all train_seasons, so we treat it as a single combined season
+            df["season"] = "2023-2026"
+        else:
+            raise ValueError("CSV must contain a 'season' column")
+            
+    # Do not cast to Int64 because "2023-2026" is a string
+    df["season"] = df["season"].astype(str)
 
     return df
 
@@ -58,7 +60,8 @@ def plot_distribution_by_season(
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    seasons = sorted(temp["season"].dropna().unique())
+    # Use string sorting for season labels
+    seasons = sorted(df["season"].dropna().unique(), key=str)
 
     for season in seasons:
         season_df = temp[temp["season"] == season].copy()
@@ -67,26 +70,33 @@ def plot_distribution_by_season(
         if values.empty:
             continue
 
-        plt.figure(figsize=(9, 6))
+        plt.figure(figsize=(10, 7))
 
         if rounded:
             min_val = int(values.min())
             max_val = int(values.max())
 
-            # integer-centered bins
             bins = range(min_val, max_val + 2)
 
             plt.hist(values, bins=bins, edgecolor="black", align="left")
-            plt.xticks(range(min_val, max_val + 1))
+            
+            # Dynamic tick step to prevent overlap
+            rng = max_val - min_val
+            step = 1 if rng <= 15 else (2 if rng <= 30 else 5)
+            
+            plt.xticks(range(min_val, max_val + 1, step), fontsize=14)
+            plt.yticks(fontsize=14)
 
             xlabel = f"Rounded {stat_col}"
         else:
             plt.hist(values, bins=30, edgecolor="black")
+            plt.xticks(fontsize=14)
+            plt.yticks(fontsize=14)
             xlabel = stat_col
 
-        plt.title(f"Distribution of {stat_col} by Player — {season}")
-        plt.xlabel(xlabel)
-        plt.ylabel("Number of players")
+        plt.title(f"Distribution of {stat_col} by Player — {season}", fontsize=20, fontweight="bold")
+        plt.xlabel(xlabel, fontsize=18)
+        plt.ylabel("Number of players", fontsize=18)
         plt.grid(axis="y", alpha=0.3)
 
         out_path = out_dir / f"{stat_col}_{season}.png"

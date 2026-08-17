@@ -1,0 +1,11 @@
+team,strategy,punts,risk,team_win_shares_sum
+6,baseline,TOV,0.1,30.72
+1,baseline,,0.1,24.896
+5,baseline,FT,0.1,22.484
+10,baseline,,0.28,20.216
+2,blocks_heavy,,0.1,16.236
+8,big,FT,0.1,13.804
+3,guard,"BLK,REB",0.1,12.28
+9,baseline,PTS,0.1,11.3
+7,guard,FT,0.1,10.792
+4,big,"AST,FG3M",0.1,2.244

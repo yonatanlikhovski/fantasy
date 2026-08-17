@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Strategy Draft Dashboard</title>
+  <style>
+    :root {
+      --bg: #f4f5f7;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #4c78a8;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 2rem 2rem 1rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--card);
+    }
+    header h1 { margin: 0 0 0.35rem; font-size: 1.65rem; }
+    header p { margin: 0; color: var(--muted); max-width: 62rem; }
+    main {
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1.25rem;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1rem 1.1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1rem;
+      color: var(--accent);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    @media (max-width: 520px) {
+      main { grid-template-columns: 1fr; padding: 1rem; }
+      header { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Multi-Strategy Fantasy Draft — 2027 Simulation</h1>
+    <p>
+      Visual summary of <code>run_multi_strategy_draft.py</code> outputs:
+      10 teams with distinct ignoring/build strategies, snake draft, and fast win-share Monte Carlo (250 trials).
+    </p>
+  </header>
+  <main>
+    
+    <section class="card">
+      <h2>Projected Standings</h2>
+      <img src="01_standings_leaderboard.png" alt="Projected Standings" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Win Rate vs Category Points</h2>
+      <img src="02_performance_scatter.png" alt="Win Rate vs Category Points" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Category Profile Heatmap</h2>
+      <img src="03_category_heatmap.png" alt="Category Profile Heatmap" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Top Teams Radar</h2>
+      <img src="04_top_teams_radar.png" alt="Top Teams Radar" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Win Shares by Team</h2>
+      <img src="05_win_shares_summary.png" alt="Win Shares by Team" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Roster WS Distribution</h2>
+      <img src="06_player_ws_distribution.png" alt="Roster WS Distribution" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Top Players</h2>
+      <img src="07_top_players.png" alt="Top Players" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Draft Board</h2>
+      <img src="08_draft_board.png" alt="Draft Board" loading="lazy" />
+    </section>
+
+    <section class="card">
+      <h2>Per-Team Metrics</h2>
+      <img src="09_strategy_comparison.png" alt="Per-Team Metrics" loading="lazy" />
+    </section>
+  </main>
+</body>
+</html>

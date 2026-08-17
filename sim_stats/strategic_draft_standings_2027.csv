@@ -1,0 +1,11 @@
+team,W,cat_pts,strategy,punts,risk
+6,7.844,47.72,baseline,TOV,0.1
+2,6.94,46.836,blocks_heavy,,0.1
+3,5.44,42.31,guard,"BLK,REB",0.1
+8,4.884,43.528,big,FT,0.1
+5,4.396,39.732,baseline,FT,0.1
+1,4.336,39.314,baseline,,0.1
+10,3.944,38.076,baseline,,0.28
+7,3.612,37.428,guard,FT,0.1
+9,2.292,34.208,baseline,PTS,0.1
+4,1.308,35.848,big,"AST,FG3M",0.1

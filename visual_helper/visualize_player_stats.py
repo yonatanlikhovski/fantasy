@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # ---------------------------------------------------------------------
 
 DEFAULT_INPUT = Path("sim_stats/player_season_stats.csv")
-DEFAULT_OUT_DIR = Path("visual_helper/plots")
+DEFAULT_OUT_DIR = Path("plots")
 
 
 # ---------------------------------------------------------------------
